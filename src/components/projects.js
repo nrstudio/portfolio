@@ -1,11 +1,9 @@
 import * as React from "react"
 import {
-  		BrowserRouter as Router,
-  		Route,
+
   		Link,
   		Switch,
-  		useRouteMatch,
-  		useParams
+
 	} from "react-router-dom";
 
 import { projectslist } from "../projects/projectlist.js"
@@ -13,17 +11,17 @@ import { projectslist } from "../projects/projectlist.js"
 import { HiOutlineEye } from "react-icons/hi"
 
 import RouteWithSubRoutes from './subroutes'
-import Layout from "../components/layout"
 
-import DreamTracer from "../projects/dreamtracer"
-import Shapeshift from "../projects/shapeshift" 
-import WessMeetsWest from "../projects/wmw"
-import FrontPorch from "../projects/frontporch"
-import BrooksOfYork from "../projects/brooks"
-import Songhive from "../projects/songhive"
-import NewMachines from "../projects/newmachines"
-import Misc from "../projects/misc"
-import Personal from "../projects/personal"
+
+// import Shapeshift from "../projects/shapeshift" 
+// import DreamTracer from "../projects/dreamtracer"
+// import WessMeetsWest from "../projects/wmw"
+// import FrontPorch from "../projects/frontporch"
+// import BrooksOfYork from "../projects/brooks"
+// import Songhive from "../projects/songhive"
+// import NewMachines from "../projects/newmachines"
+// import Misc from "../projects/misc"
+// import Personal from "../projects/personal"
 
 function Projects({ routes }) {
 	  
@@ -37,7 +35,7 @@ function Projects({ routes }) {
 	      
 	      <section className="content-container">
 			    {projectslist.map((project) => {
-			    	const { title, thumb, desc, url, comp } = project;
+			    	const { title, thumb, desc, url } = project;
 			    	return (
 			    		<>	
 				    		<article className="project-card">

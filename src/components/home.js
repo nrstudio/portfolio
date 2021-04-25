@@ -10,7 +10,7 @@ const Home = () => (
         <article className="left">
           <img
             src={heroImage}
-            alt="An artsy photo of Nick"
+            alt="Nick Robinson"
             className="hero-img"
           />
         </article>

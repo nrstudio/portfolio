@@ -31,7 +31,7 @@ const About = () => (
         <article className="right">
           <img
             src={aboutImage}
-            alt="A photo of Nick, bewildered on the shores"
+            alt="Nick, bewildered on the shores"
             className="hero-img"
           />
         </article>

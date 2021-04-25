@@ -30,7 +30,7 @@ const MobileNav = () => {
 					<li><Link onClick={ () => setOpenMenu(!openMenu)} to="/about">About</Link></li>
 					<li><h2 className="spacer">You are here.</h2></li>
 					<li><a href="mailto:nickrobinsonart@gmail.com">E-Mail</a></li>
-					<li><a href="http://www.instagram.com/imaged_curses" target="_blank">Instagram</a></li>
+					<li><a href="http://www.instagram.com/imaged_curses" target="_blank" rel="noreferrer">Instagram</a></li>
 					<li><a href="/">Dribbble</a></li>
 				</ul>
 			</MenuLinks>

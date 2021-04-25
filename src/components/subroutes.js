@@ -1,9 +1,5 @@
 import React from 'react';
-import ReactDom from 'react-dom';
-import {
-  		BrowserRouter as Router,
-  		Route
-	} from "react-router-dom";
+import { Route } from 'react-router-dom';
 
 function RouteWithSubRoutes(route) {
 	return (

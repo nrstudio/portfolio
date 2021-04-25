@@ -61,7 +61,7 @@ function Shapeshift() {
 	      <section id="top" className={` ${projectStyle.topnav} spacing1 `}>
 	      	<div><Link className={projectStyle.a} to="/projects">
 	      		 <HiArrowNarrowLeft/>Back <span className="display">to Projects</span></Link></div>
-	      	<div className="flushright"><a href="http://shapeshiftbrewing.netlify.com" target="_blank">
+	      	<div className="flushright"><a href="http://shapeshiftbrewing.netlify.com" target="_blank" rel="noreferrer">
 	      		 <HiLink/>Launch <span className="display">Website</span></a></div>
 	      </section>
 
