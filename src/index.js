@@ -3,7 +3,7 @@ import ReactDom from 'react-dom';
 import {
   		BrowserRouter as Router,
   		Switch
-	} from "react-router-dom";
+  		} from "react-router-dom";
 import './styles/index.css';
 
 import RouteWithSubRoutes from './components/subroutes'
@@ -82,6 +82,8 @@ const routes = [
 
 function App() {
 	return (
+		<>
+
 		<Router>
 			<Layout />
 			<Switch>
@@ -89,7 +91,10 @@ function App() {
 					<RouteWithSubRoutes key={i} {...route} />
 				))}
 			</Switch>
+
 		</Router>
+		
+		</>
 	);
 }
 

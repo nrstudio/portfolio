@@ -48,8 +48,10 @@ function Projects({ routes }) {
 					    				className="project-thumb"
 					    			/>
 					    			<div className="project-card-hover">
-						    			<h2>{title}</h2>
-						    			<small>{desc}</small>
+					    				<div className="project-card-info">
+							    			<h2>{title}</h2>
+							    			<small>{desc}</small>
+							    		</div>
 					    			</div>
 					    			<div className="project-info">
 					    				<h2 className="project-title">{title}</h2>

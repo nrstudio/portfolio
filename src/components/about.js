@@ -1,5 +1,9 @@
 import * as React from "react"
 
+import { FaBehance } from 'react-icons/fa'
+import { RiInstagramLine } from 'react-icons/ri'
+import { HiOutlineMail } from 'react-icons/hi';
+
 import aboutImage from "../img/about-image.png"
 
 const About = () => (
@@ -34,6 +38,23 @@ const About = () => (
             alt="Nick, bewildered on the shores"
             className="hero-img"
           />
+        </article>
+    </section>
+    <section className="social-container">
+        <article className="social-item">
+          <a href="mailto:nickrobinsonart@gmail.com">
+            <HiOutlineMail className="social-size"/><span className="social-text"> nickrobinsonart@gmail.com</span>
+          </a>
+        </article>
+        <article className="social-item">
+          <a href="http://www.instagram.com/imaged_curses">
+            <RiInstagramLine className="social-size"/><span className="social-text"> Instagram</span>
+          </a>
+        </article>
+        <article className="social-item">
+          <a href="http://www.behance.net/nickrobinson">
+            <FaBehance className="social-size"/> <span className="social-text">Behance</span>
+          </a>
         </article>
     </section>
   </main>

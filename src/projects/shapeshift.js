@@ -7,6 +7,8 @@ import { HiChevronUp } from 'react-icons/hi'
 import { HiOutlineArrowNarrowRight } from 'react-icons/hi'
 import { HiOutlineArrowNarrowDown } from 'react-icons/hi'
 
+import projectStyle from '../styles/project.module.scss';
+
 import overview from './shapeshift/overview.jpg'
 
 import logoblack from './shapeshift/logo-stacked-black.jpg'
@@ -51,8 +53,6 @@ import taproommobile from './shapeshift/taproom-mobile.jpg'
 import beersmobile from './shapeshift/beers-mobile.jpg'
 import aboutmobile from './shapeshift/about-mobile.jpg'
 import findusmobile from './shapeshift/findus-mobile.jpg'
-
-import projectStyle from '../styles/project.module.scss';
  
 function Shapeshift() {
   return (
@@ -60,24 +60,24 @@ function Shapeshift() {
 
 	      <section id="top" className={` ${projectStyle.topnav} spacing1 `}>
 	      	<div><Link className={projectStyle.a} to="/projects">
-	      		 <HiArrowNarrowLeft/>Back <span className="display">to Projects</span></Link></div>
+	      		 <HiArrowNarrowLeft/> Back <span className="display">to Projects</span></Link></div>
 	      	<div className="flushright"><a href="http://shapeshiftbrewing.netlify.com" target="_blank" rel="noreferrer">
-	      		 <HiLink/>Launch <span className="display">Website</span></a></div>
+	      		 <HiLink/> Launch <span className="display">Website</span></a></div>
 	      </section>
 
 	      <section className={projectStyle.header}>
 	      	<h2>Shapeshift Brewing</h2>
-	      	<p>2018-2020</p>
+	      	<p><h4 className={projectStyle.projecttype}>Mockup Design Campaign</h4> (2018-2020)</p>
 	      </section>
 
 	      <section className={projectStyle.categories}>
 			 <ul>
-			 	<li><a href="#overview">Overview.</a></li>
-			 	<li><a href="#target">Target Audience.</a></li>
-			 	<li><a href="#branding">Branding.</a></li>
-			 	<li><a href="#packaging">Packaging.</a></li>
-			 	<li><a href="#ux">UX.</a></li>
-			 	<li><a href="#web">Web Design.</a></li>
+			 	<li><a href="#overview">Overview</a></li>
+			 	<li><a href="#target">Target Audience</a></li>
+			 	<li><a href="#branding">Branding</a></li>
+			 	<li><a href="#packaging">Packaging</a></li>
+			 	<li><a href="#ux">UX</a></li>
+			 	<li><a href="#web">Web Design</a></li>
 			 </ul>
 		  </section>
 
@@ -278,9 +278,9 @@ function Shapeshift() {
 		  		</article>
 		  		<article className={projectStyle.right}>
 		  			<img src={font1} className={projectStyle.font1} alt="Stenciletta Solid"/>
-		  			<h4>Headers, Logotype</h4>
+		  			<h4>Headings, Logotype</h4>
 		  			<img src={font2} className={projectStyle.font2} alt="Tenon"/>
-		  			<h4>Sub-headers, Body Text, Beer Labeling</h4>
+		  			<h4>Sub-headings, Body Text, Beer Labeling</h4>
 		  			<img src={font3} className={projectStyle.font3} alt="Headings" />
 		  		</article>
 
@@ -295,7 +295,7 @@ function Shapeshift() {
 		  <section className={projectStyle.sectionbg} id="packaging">
 		  	<h2>PACKAGING</h2>
 
-		  	<section className={projectStyle.branding}>
+		  	<section className={projectStyle.brandingshape}>
 		  		<h3>CAMPFIRE HEADPHASE IPA</h3>
 			  	<p>
 			  		As a New England based craft brewery, camping is an important past-time and I felt
@@ -321,7 +321,7 @@ function Shapeshift() {
 			  	 </article>
 		  	</section>
 
-		  	<section className={projectStyle.branding}>
+		  	<section className={projectStyle.brandingshape}>
 		  		<h3>CLOUDKICKER DOUBLE IPA</h3>
 			  	<p>
 			  		The idea of the chemistry required to produce a potent beer resulted in a backdrop
@@ -345,7 +345,7 @@ function Shapeshift() {
 			  	 </article>
 		  	</section>
 
-		  	<section className={projectStyle.branding}>
+		  	<section className={projectStyle.brandingshape}>
 		  		<h3>PLANETARY SERIES: JUPITER & PHOBOS</h3>
 			  	<p>
 			  		The “Planetary Series” is a bottled beer series for experimental beers that
