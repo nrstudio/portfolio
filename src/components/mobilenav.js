@@ -113,7 +113,7 @@ const MenuLinks = styled.nav`
 	height: 100vh;
 	width: 100%;
 
-	transition: opacity 300ms, transform 350ms ease-out;
+	transition: opacity 200ms, transform 200ms ease-out;
 	transform: ${ ({ openMenu }) => openMenu ? "translateY(0%)" : "translateY(-100%)" };
 	opacity: ${ ({ openMenu }) => openMenu ? "1" : "0" };
 
@@ -153,7 +153,7 @@ const MenuLinks = styled.nav`
 	}
 
 	li {
-		margin: 15px 0
+		margin: 10px 0
 	}
 `
 

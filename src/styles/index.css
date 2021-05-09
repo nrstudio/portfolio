@@ -165,6 +165,10 @@ h4 {
 
 /* Main Content Styles */
 
+.para {
+	margin-top: -10px;
+}
+
 .bg-about {
 	background: #f2f2f2;
 	z-index: -1;
@@ -407,6 +411,14 @@ h4 {
 		margin-right: auto;
 		text-align: center;
 	}
+
+	.leftflip {
+		order: 2;
+	}
+
+	.rightflip {
+		order: 1;
+	}
 }
 
 @media only screen and (max-width: 700px) {
@@ -421,12 +433,21 @@ h4 {
 	.project-card-info h2 {
 		font-size: 1.6rem;
 	}
+
+	.right h1 {
+		font-size: 2rem;
+	}
+
+	.right h2 {
+		font-size: 1.6rem;
+	}
 }
 
 @media only screen and (max-width: 640px) {
 	.social-size {
-		width: 35px;
-		height: 35px;
+		width: 50px;
+		height: 50px;
+		margin-bottom: 30px;
 	}
 
 	.social-text {
@@ -435,6 +456,7 @@ h4 {
 
 	.social-container {
 		padding-left: 0;
+		flex-direction: column;
 	}
 }
 
@@ -492,9 +514,7 @@ h4 {
 		height: 1000px;
 	}
 
-	.project-info {
-		text-align: center;
-	}
+	
 }
 
 @media only screen and (max-width: 414px) {

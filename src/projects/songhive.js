@@ -8,6 +8,7 @@ import { HiArrowNarrowLeft } from 'react-icons/hi'
 import { HiChevronUp } from 'react-icons/hi'
 
 import overview from './songhive/overview.jpg'
+
 import logodark from './songhive/logodark.png'
 import bee1 from './songhive/bee1.png'
 import bee2 from './songhive/bee2.png'
@@ -45,7 +46,7 @@ function Songhive() {
   return (
   		<main className="single-project">
 
-	        <section id="top" className={` ${projectStyle.topnav} spacing1 `}>
+	        <section className={` ${projectStyle.topnav} spacing1 `}>
       			<div>
       				<Link className={projectStyle.a} to="/projects">
       		 			<HiArrowNarrowLeft/> Back <span className="display">to Projects</span>
@@ -58,7 +59,7 @@ function Songhive() {
       		</section>
 
       		<section className={projectStyle.header}>
-      			<h2>Songhive</h2>
+      			<h2>SONGHIVE</h2>
       			<p><h4 className={projectStyle.projecttype}>Motion Graphic</h4> (2018)</p>
       		</section>
 

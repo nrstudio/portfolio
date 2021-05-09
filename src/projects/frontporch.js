@@ -19,7 +19,7 @@ function FrontPorch() {
   return (
   		<main className="single-project">
 
-	        <section id="top" className={` ${projectStyle.topnav} spacing1 `}>
+	        <section className={` ${projectStyle.topnav} spacing1 `}>
       			<div>
       				<Link className={projectStyle.a} to="/projects">
       		 			<HiArrowNarrowLeft/> Back <span className="display">to Projects</span>
@@ -160,7 +160,7 @@ function FrontPorch() {
 					  	 	</p>
 					  	 </article>
 					</section>
-						<section className={projectStyle.section}>
+					<section className={projectStyle.section}>
 						<img
 				  	 		src={charcoal}
 				  	 		className={projectStyle.pic}

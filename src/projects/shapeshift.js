@@ -58,7 +58,7 @@ function Shapeshift() {
   return (
   		<main className="single-project">
 
-	      <section id="top" className={` ${projectStyle.topnav} spacing1 `}>
+	      <section className={` ${projectStyle.topnav} spacing1 `}>
 	      	<div><Link className={projectStyle.a} to="/projects">
 	      		 <HiArrowNarrowLeft/> Back <span className="display">to Projects</span></Link></div>
 	      	<div className="flushright"><a href="http://shapeshiftbrewing.netlify.com" target="_blank" rel="noreferrer">
@@ -107,17 +107,16 @@ function Shapeshift() {
 		    <section className={projectStyle.sectionbg} id="target">
 		  		<h2>TARGET AUDIENCE</h2>
 		  		<section className={projectStyle.sectionwrapper}>
-		  			<article className={` ${projectStyle.left} ${projectStyle.flexleft}`}>
+		  			<article className={` ${projectStyle.left} ${projectStyle.leftwidth} ${projectStyle.flexleft}`}>
 				  	 	<p>
 				  	 		Shapeshift sets out to make the connection between art,
-				  	 		music, and beer. At the very core of these areas is creativity 
+				  	 		music, and beer.  
+				  	 		At the very core of these areas is creativity 
 				  	 		and imagination. 
-				  	 	</p>
-				  	 	<p>
-				  	 		Craft beer is “local” at heart. With the beer’s numerous
-				  	 		references to music, we aim to attract beer enthusiasts of
-				  	 		all kinds, but mainly those people who enjoy the fruits of
-				  	 		local music and art, and the community that they bring together.
+				  	 		 Craft beer is “local” at heart. With the beer’s numerous
+				  	 		references to music,
+				  	 		we aim to attract beer enthusiasts of all kinds, but mainly those people who enjoy	
+				  	 		the fruits of local music and art, and the community that they bring together.
 				  	 	</p>
 			  		</article>
 				  	 <article className={` ${projectStyle.right} ${projectStyle.flexright}`}>

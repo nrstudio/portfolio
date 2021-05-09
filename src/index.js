@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 import {
+		Route,
   		BrowserRouter as Router,
   		Switch
   		} from "react-router-dom";
 import './styles/index.css';
-
 import RouteWithSubRoutes from './components/subroutes'
+
 import Layout from './components/layout'
 import Home from './components/home'
 import Projects from './components/projects'
@@ -28,7 +29,7 @@ import Personal from "./projects/personal"
 
 const routes = [
 	{
-		path: "/home",
+		path: "/",
 		component: Home,
 		exact: true
 	},
@@ -85,13 +86,13 @@ function App() {
 		<>
 
 		<Router>
+			
 			<Layout />
 			<Switch>
 				{routes.map((route, i) => (
 					<RouteWithSubRoutes key={i} {...route} />
 				))}
-			</Switch>
-
+			</Switch>	
 		</Router>
 		
 		</>

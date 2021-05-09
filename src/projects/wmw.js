@@ -41,7 +41,7 @@ function WessMeetsWest() {
   return (
 	      <main className="single-project">
 
-			    <section id="top" className={` ${projectStyle.topnav} spacing1 `}>
+			    <section className={` ${projectStyle.topnav} spacing1 `}>
 	      			<div>
 	      				<Link className={projectStyle.a} to="/projects">
 	      		 			<HiArrowNarrowLeft/> Back <span className="display">to Projects</span>
@@ -180,7 +180,7 @@ function WessMeetsWest() {
 					  	</article>
 					</section>
 
-					<section className={projectStyle.center}>
+					<section className={projectStyle.sectioncenter}>
 				  	 	<img src={vinylspine}
 				  	 		 className={projectStyle.widepic}
 				  	 		 alt="Wess Meets West 'A Light Within The Fracture' Spine"

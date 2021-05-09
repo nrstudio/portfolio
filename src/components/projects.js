@@ -1,18 +1,19 @@
 import * as React from "react"
 import {
-
+		Route,
   		Link,
   		Switch,
 
 	} from "react-router-dom";
 
+import RouteWithSubRoutes from './subroutes'
+
 import { projectslist } from "../projects/projectlist.js"
 
 import { HiOutlineEye } from "react-icons/hi"
 
-import RouteWithSubRoutes from './subroutes'
-
-
+// import Home from "./home"
+// import About from "./about"
 // import Shapeshift from "../projects/shapeshift" 
 // import DreamTracer from "../projects/dreamtracer"
 // import WessMeetsWest from "../projects/wmw"
@@ -23,13 +24,14 @@ import RouteWithSubRoutes from './subroutes'
 // import Misc from "../projects/misc"
 // import Personal from "../projects/personal"
 
+
 function Projects({ routes }) {
 	  
 	  return (
-  		<>
+  		<div>
   		  <Switch>
 	        {routes.map((route, i) => (
-	          <RouteWithSubRoutes key={i} {...route} />
+	            <RouteWithSubRoutes key={i} {...route} />
 	        ))}
      	  </Switch>
 	      
@@ -37,7 +39,7 @@ function Projects({ routes }) {
 			    {projectslist.map((project) => {
 			    	const { title, thumb, desc, url } = project;
 			    	return (
-			    		<>	
+			    			
 				    		<article className="project-card">
 				    			<HiOutlineEye className="eyecon"/>
 				    			<Link to={url}>
@@ -59,12 +61,12 @@ function Projects({ routes }) {
 					    			</div>
 				    			</Link>
 				    		</article>
-			    		</>
+			    		
 			    	);
 			    })}
 
 		  </section>
-		</>
+		</div>
 	);
 }
 
