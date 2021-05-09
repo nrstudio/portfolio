@@ -6,7 +6,7 @@ import { FaBehance } from 'react-icons/fa'
 import { RiInstagramLine } from 'react-icons/ri'
 import { HiOutlineMail } from 'react-icons/hi';
 
-import Projects from './projects'
+// import Projects from './projects'
 
 function Home() {
   return (
