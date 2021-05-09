@@ -345,7 +345,7 @@ function DreamTracer() {
 					</article>
 					<article>
 						<img src={cardmodalflip}
-							 className={projectStyle. mediumpic}
+							 className={projectStyle.mediumpic}
 							 alt="Dream Card modal, reverse side"
 						/>
 					</article>
