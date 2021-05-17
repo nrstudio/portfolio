@@ -1,20 +1,14 @@
 import * as React from "react"
 import {
-      BrowserRouter as Router,
-      Link,
-      Switch
+      Link
       } from "react-router-dom";
 import heroImage from '../img/hero-image.png'
 
 import { projectslist } from "../projects/projectlist.js"
 
-import { HiOutlineEye } from "react-icons/hi"
-
 import { FaBehance } from 'react-icons/fa'
 import { RiInstagramLine } from 'react-icons/ri'
 import { HiOutlineMail } from 'react-icons/hi';
-
-import Projects from './projects'
 
 import projectStyle from '../styles/project.module.scss'
 
@@ -61,7 +55,7 @@ function Home() {
 
         <section className={` content-container ${projectStyle.projectanimate} `}>
           {projectslist.map((project) => {
-            const { title, thumb, desc, url, logo } = project;
+            const { title, desc, url, logo } = project;
             return (
                 
                 <article className="projectcard">

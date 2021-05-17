@@ -7,9 +7,6 @@ import '../styles/index.css';
 import logomark from "../img/logomark.png"
 import logomarkWhite from "../img/logomark-white.png"
 
-import lefthalf from "../img/left-half.png"
-import righthalf from '../img/right-half.png'
-
 const MobileNav = () => {
 	const [openMenu, setOpenMenu] = useState(false);
 	return (
