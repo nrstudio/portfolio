@@ -1,5 +1,6 @@
 import * as React from "react"
 import { Link } from 'react-router-dom'
+import Lightbox from 'react-image-lightbox'
 
 import { HiLink } from 'react-icons/hi'
 import { HiArrowNarrowLeft } from 'react-icons/hi'
@@ -32,6 +33,7 @@ import headings from './dreamtracer/headings.png'
 
 import cardmodal from './dreamtracer/cardmodal.png'
 import cardmodalflip from './dreamtracer/cardmodalflip.png'
+import card01 from './dreamtracer/card01.png'
 import card02 from './dreamtracer/card02.png'
 import card03 from './dreamtracer/card03.png'
 import card04 from './dreamtracer/card04.png'
@@ -67,18 +69,37 @@ import keyscreen from './dreamtracer/keyscreen.png'
 import keymodal from './dreamtracer/keymodal.png'
 import cardgrid from './dreamtracer/cardgrid.png'
 
-function DreamTracer() {
-  return (
+const images = [
+	'./dreamtracer/overview.jpg',
+	'./dreamtracer/logomark-black.jpg'
+];
+
+export default class Photos extends React.Component {
+
+  constructor(props) {
+		super(props);
+
+		this.state = {
+			photoIndex: 0,
+			isOpen: false,
+		};
+	}
+    
+    render() {
+    	const { photoIndex, isOpen } = this.state;
+    
+
+    return (
   		<main className="single-project">
   			<section className={` ${projectStyle.topnav} spacing1 `}>
 		      	<div><Link className={projectStyle.a} to="/projects">
-		      		 <HiArrowNarrowLeft/> Back <span className="display">to Projects</span></Link></div>
-		      	<div className="flushright"><a href="http://dreamtracer.netlify.com" target="_blank" rel="noreferrer">
-		      		 <HiLink/> Launch <span className="display">Website</span></a></div>
+		      		 <HiArrowNarrowLeft className={projectStyle.linkicon}/> Back <span className="display">to Projects</span></Link></div>
+		      	<div className="flushright"><a href="http://dreamtracerlanding.netlify.com" target="_blank" rel="noreferrer">
+		      		 <HiLink className={projectStyle.linkicon}/> Launch <span className="display">Website</span></a></div>
 	        </section>
 
 	        <section className={projectStyle.header}>
-	      		<h2>DREAM TRACER</h2>
+	      		<h2>Dream Tracer</h2>
 	       		<p><h4 className={projectStyle.projecttype}>Mobile Dream Journal App</h4> (2018-2020)</p>
 	        </section>
 
@@ -99,6 +120,7 @@ function DreamTracer() {
 			  	 		src={overview}
 			  	 		className={projectStyle.pic}
 			  	 		alt="Dream Tracer App, Home Page, Phone on Bed"
+			  	 		onClick={() => this.setState({ isOpen: true, photoIndex:0 })}
 			  	 	/>
 			  	 </article>
 			  	 <article className={projectStyle.right}>
@@ -126,7 +148,7 @@ function DreamTracer() {
 			</section>
 
 			<section className={projectStyle.sectionbg} id="target">
-		  		<h2>TARGET AUDIENCE</h2>
+		  		<h2>Target Audience</h2>
 		  		<section className={projectStyle.sectionwrapper}>
 		  			<article className={` ${projectStyle.left} ${projectStyle.flexleft}`}>
 		  				<img src={target}
@@ -160,7 +182,7 @@ function DreamTracer() {
 		 	</section>
 
 		 	<section className={projectStyle.section} id="branding">
-		    	<h2>BRANDING</h2>
+		    	<h2>Branding</h2>
   			  	<section className={projectStyle.sectionwrapper}>
   			  		<article className={projectStyle.left}>
   			  			<h3>Logo Design</h3>
@@ -176,6 +198,8 @@ function DreamTracer() {
   			  			<img src={logoblack}
   			  				 className={projectStyle.pic}
   			  				 alt="Dream Tracer Logo (Black)"
+  			  				 onClick={() => this.setState({ isOpen: true, photoIndex:1 })}
+
   			  			/>
   			  		</article>
 
@@ -321,7 +345,7 @@ function DreamTracer() {
 	  		
 
 		  	<section className={projectStyle.sectionbg} id="dreamcards">
-			  	<h2>DREAM CARDS</h2>
+			  	<h2>Dream Cards</h2>
 			  	<section className={projectStyle.branding}>
 				  	<p>
 				  		Depending on what keywords and mood that the user selects for their
@@ -429,10 +453,10 @@ function DreamTracer() {
 							 className={projectStyle.cardpic}
 							 alt="Dream Card No. II, The Apparition"
 						/>
-						{/*<img src={card01}
+						<img src={card01}
 							 className={projectStyle.cardpic}
 							 alt="Dream Card No. I, The Void"
-						/>*/}
+						/>
 				</section>
 				<section className={` ${projectStyle.backwrapper} ${projectStyle.spacing2} `}>
 			  		<a href="#top"><button className={projectStyle.btnback}>
@@ -546,7 +570,7 @@ function DreamTracer() {
 			</section>
 			
 			<section className={projectStyle.sectionbg} id="poc">
-			  	<h2>PROOF OF CONCEPT</h2>
+			  	<h2>Proof of Concept</h2>
 			  	<section className={projectStyle.poc}>
 				  	<h3>User Task Flow One</h3>
 				  	<h4>Create a New Dream Entry</h4>
@@ -641,8 +665,27 @@ function DreamTracer() {
 		  		</section>
 
 			</section>
-		</main>
-	);
-}
 
-export default DreamTracer
+		{isOpen && (
+	      <Lightbox
+	        mainSrc={images[photoIndex]}
+	        nextSrc={images[(photoIndex + 1) % images.length]}
+	        prevSrc={images[(photoIndex + images.length - 1) % images.length]}
+	        onCloseRequest={() => this.setState({ isOpen: false })}
+	        onMovePrevRequest={() =>
+	          this.setState({
+	            photoIndex: (photoIndex + images.length - 1) % images.length,
+	          })
+	        }
+	        onMoveNextRequest={() =>
+	          this.setState({
+	            photoIndex: (photoIndex + 1) % images.length,
+	          })
+	        }
+	      />
+   		)}
+    	
+		</main>
+		);
+	}
+}

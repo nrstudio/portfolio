@@ -44,7 +44,7 @@ function WessMeetsWest() {
 			    <section className={` ${projectStyle.topnav} spacing1 `}>
 	      			<div>
 	      				<Link className={projectStyle.a} to="/projects">
-	      		 			<HiArrowNarrowLeft/> Back <span className="display">to Projects</span>
+	      		 			<HiArrowNarrowLeft className={projectStyle.linkicon}/> Back <span className="display">to Projects</span>
 	      		 		</Link>
 	      		 	</div>
 	      			<div className="flushright">
@@ -88,7 +88,7 @@ function WessMeetsWest() {
 				</section>
 
 				<section className={projectStyle.sectionbg} id="branding">
-		  			<h2>BRANDING</h2>
+		  			<h2>Branding</h2>
 				  		<section className={projectStyle.branding}>
 			  				<p>
 					  	 		I wrote out the band name for its primary logo,
@@ -135,7 +135,7 @@ function WessMeetsWest() {
 			    </section>
 
 			    <section className={projectStyle.section}>
-			    	<h2>ALBUM ARTWORK</h2>
+			    	<h2>Album Artwork</h2>
 				    <section className={projectStyle.sectionwrapper} id="album">
 					  	<article className={projectStyle.left}>
 					  	 	<img
@@ -246,7 +246,7 @@ function WessMeetsWest() {
 				</section>
 
 				<section className={projectStyle.sectionbg} id="merchandise">
-		  			<h2>MERCHANDISE & POSTERS</h2>
+		  			<h2>Merchandise & Posters</h2>
 			  		<section className={projectStyle.branding}>
 		  				<p>
 				  	 		With the roll-out of our "A Light Within The Fracture" Vinyl LP,

@@ -1,16 +1,30 @@
 import * as React from "react"
-
+import {
+      BrowserRouter as Router,
+      Link,
+      Switch
+      } from "react-router-dom";
 import heroImage from '../img/hero-image.png'
+
+import { projectslist } from "../projects/projectlist.js"
+
+import { HiOutlineEye } from "react-icons/hi"
 
 import { FaBehance } from 'react-icons/fa'
 import { RiInstagramLine } from 'react-icons/ri'
 import { HiOutlineMail } from 'react-icons/hi';
 
-// import Projects from './projects'
+import Projects from './projects'
+
+import projectStyle from '../styles/project.module.scss'
 
 function Home() {
   return (
+    <>
+    <div className="bg-home"></div>
+    <div className="bg-home-texture"></div>
     <main className="container">
+      <div className="viewport">
         <section className="content-container">
           <article className="left leftflip">
             <img
@@ -21,12 +35,12 @@ function Home() {
           </article>
           <article className="right rightflip">
             <h1>I'm Nick Robinson</h1>
-            <h1>I'm an Artist-turned Product Designer who can code.</h1>
+            <h1 className="white">I'm an Artist-turned Product Designer who can code.</h1>
             <h2>But still an artist.</h2>
-            <h2>Let's collaborate on something beautiful and unique.</h2>
+            <h2 className="collab">Let's collaborate on something beautiful and unique.</h2>
           </article>
   	    </section>
-        <section className="social-container">
+        <section className="social-container home-social">
           <article className="social-item">
             <a href="mailto:nickrobinsonart@gmail.com">
               <HiOutlineMail class="social-size"/><span className="social-text"> nickrobinsonart@gmail.com</span>
@@ -43,8 +57,41 @@ function Home() {
             </a>
           </article>
         </section>
-        
+      </div>
+
+        <section className={` content-container ${projectStyle.projectanimate} `}>
+          {projectslist.map((project) => {
+            const { title, thumb, desc, url, logo } = project;
+            return (
+                
+                <article className="projectcard">
+              
+                  <Link to={url}>
+                    <img
+                      key={project}
+                      src={logo}
+                      alt={title}
+                      className="project-thumb"
+                    />
+                    <div className="project-card-hover">
+                      <div className="project-card-info">
+                        <h2>{title}</h2>
+                        <small>{desc}</small>
+                      </div>
+                    </div>
+                    <div className="project-info">
+                      <h2 className="project-title">{title}</h2>
+                      <p className="project-desc">{desc}</p>
+                    </div>
+                  </Link>
+                </article>
+              
+            );
+          })}
+
+      </section>
     </main>
+    </>
   );
 }
 

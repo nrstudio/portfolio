@@ -8,6 +8,7 @@ import {
 
 import RouteWithSubRoutes from './subroutes'
 
+import projectStyle from '../styles/project.module.scss'
 import { projectslist } from "../projects/projectlist.js"
 
 import { HiOutlineEye } from "react-icons/hi"
@@ -35,12 +36,12 @@ function Projects({ routes }) {
 	        ))}
      	  </Switch>
 	      
-	      <section className="content-container">
+	      <section className={` content-container ${projectStyle.projectanimate} `}>
 			    {projectslist.map((project) => {
 			    	const { title, thumb, desc, url } = project;
 			    	return (
 			    			
-				    		<article className="project-card">
+				    		<article className="projectcard">
 				    			<HiOutlineEye className="eyecon"/>
 				    			<Link to={url}>
 					    			<img

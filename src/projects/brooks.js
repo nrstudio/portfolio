@@ -29,12 +29,12 @@ function BrooksOfYork() {
 	        <section className={` ${projectStyle.topnav} spacing1 `}>
       			<div>
       				<Link className={projectStyle.a} to="/projects">
-      		 			<HiArrowNarrowLeft/> Back <span className="display">to Projects</span>
+      		 			<HiArrowNarrowLeft className={projectStyle.linkicon}/> Back <span className="display">to Projects</span>
       		 		</Link>
       		 	</div>
       			<div className="flushright">
       				<a href="https://brooksofyork.bandcamp.com" target="_blank" rel="noreferrer">
-	      		 	<HiLink/><span className="display">Go to </span>Bandcamp</a>
+	      		 	<HiLink className={projectStyle.linkicon}/><span className="display">Go to </span>Bandcamp</a>
 	      		</div>
       		</section>
 
@@ -72,7 +72,7 @@ function BrooksOfYork() {
 			</section>
 
 			<section className={projectStyle.sectionbg} id="branding">
-	  			<h2>BRANDING</h2>
+	  			<h2>Branding</h2>
   				<section className={projectStyle.branding}>
   					<p>
   						Using Futura Bold with a tracking of 200 for BrooksOfYork's
@@ -118,7 +118,7 @@ function BrooksOfYork() {
 			</section>
 
 			<section className={projectStyle.section} id="album">
-	  			<h2>ALBUM ARTWORK</h2>
+	  			<h2>Album Artwork</h2>
 
   				<section className={projectStyle.branding}>
   					<h3>Oh, My Robot</h3>

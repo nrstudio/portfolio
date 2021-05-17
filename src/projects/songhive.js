@@ -49,17 +49,17 @@ function Songhive() {
 	        <section className={` ${projectStyle.topnav} spacing1 `}>
       			<div>
       				<Link className={projectStyle.a} to="/projects">
-      		 			<HiArrowNarrowLeft/> Back <span className="display">to Projects</span>
+      		 			<HiArrowNarrowLeft className={projectStyle.linkicon}/> Back <span className="display">to Projects</span>
       		 		</Link>
       		 	</div>
       			<div className="flushright">
       				<a href="https://vimeo.com/522132794" target="_blank" rel="noreferrer">
-	      		 	<HiLink/> Launch <span className="display">Video</span></a>
+	      		 	<HiLink className={projectStyle.linkicon}/> Launch <span className="display">Video</span></a>
 	      		</div>
       		</section>
 
       		<section className={projectStyle.header}>
-      			<h2>SONGHIVE</h2>
+      			<h2>Songhive</h2>
       			<p><h4 className={projectStyle.projecttype}>Motion Graphic</h4> (2018)</p>
       		</section>
 
@@ -92,7 +92,7 @@ function Songhive() {
 			</section>
 
 			<section className={projectStyle.sectionbg} id="branding">
-	  			<h2>BRANDING & ASSETS</h2>
+	  			<h2>Branding & Assets</h2>
 			  	<section className={projectStyle.sectionwrapper}>
 		  			<article className={projectStyle.left}>
 				  	 	<img src={logodark}
@@ -190,7 +190,7 @@ function Songhive() {
   			</section>
 
   			<section className={projectStyle.section}>
-  				<h2>STORYBOARD</h2>
+  				<h2>Storyboard</h2>
 				<section className={projectStyle.storywrapper}>
 					<article className={projectStyle.storyitem}>
 						<img src={storyboard1}
@@ -273,7 +273,7 @@ function Songhive() {
   			</section>
 
 		  	<section className={projectStyle.sectionbg}>
-		  		<h2>MOTION GRAPHIC SCREENS</h2>
+		  		<h2>Motion Graphic Screens</h2>
 		  		<section className={projectStyle.sectionwrapper}>
 		  			<article className={projectStyle.left}>
 		  				<img src={screen1}

@@ -2,7 +2,10 @@
 	margin: 0 auto;
 }
 
-
+.linkicon {
+	margin-right: 0px;
+	margin-bottom: -2px;
+}
 
 .spacing2 {
 	padding-bottom: 90px;
@@ -21,6 +24,38 @@
 		order: 2;
 	}
 }
+
+.projectanimate article {
+	animation-name: projects;
+	animation-duration: 500ms;
+	animation-timing-function: ease-out;
+	animation-iteration-count: 1;
+	animation-fill-mode: both;
+}
+
+		@keyframes projects {
+			0% {
+				transform: scale(0.8);
+				opacity: 0;
+				
+			}
+
+			100% {
+				transform: scale(1.0);
+				opacity: 1;
+				
+			}
+		}
+
+	.projectanimate article:nth-child(1) { animation-delay: .1s }
+	.projectanimate article:nth-child(2) { animation-delay: .2s }
+	.projectanimate article:nth-child(3) { animation-delay: .3s }
+	.projectanimate article:nth-child(4) { animation-delay: .4s }
+	.projectanimate article:nth-child(5) { animation-delay: .5s }
+	.projectanimate article:nth-child(6) { animation-delay: .6s }
+	.projectanimate article:nth-child(7) { animation-delay: .7s }
+	.projectanimate article:nth-child(8) { animation-delay: .8s }
+
 
 .flexright {
 	@media only screen and (max-width: 700px) {
@@ -44,7 +79,6 @@
 	max-width: 1069px;
 	margin: 0 auto;
 	text-align: center;
-	text-transform: uppercase;
 	letter-spacing: 1px;
 }
 
@@ -300,7 +334,7 @@
 }
 
 .quadwrapper {
-	padding-top: 90px;
+	padding-top: 30px;
 	max-width: 1069px;
 	margin-left: auto;
 	margin-right: auto;
@@ -308,6 +342,7 @@
 	justify-content: space-around;
 	flex-flow: row wrap;
 	align-items: center;
+	margin-bottom: 90px;
 
 	@media only screen and (max-width: 1112px) {
 		padding-left: 30px;
@@ -600,6 +635,14 @@
 .mobilepic2 {
 	width: 100%;
 	max-width: 224px;
+
+	@media only screen and (max-width: 960px) {
+		max-width: 200px;
+	}
+
+	@media only screen and (max-width: 800px) {
+		max-width: 224px;
+	}
 }
 
 .radius {

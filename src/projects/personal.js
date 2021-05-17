@@ -29,12 +29,12 @@ function Personal() {
 	        <section className={` ${projectStyle.topnav} spacing1 `}>
       			<div>
       				<Link className={projectStyle.a} to="/projects">
-      		 			<HiArrowNarrowLeft/> Back <span className="display">to Projects</span>
+      		 			<HiArrowNarrowLeft className={projectStyle.linkicon}/> Back <span className="display">to Projects</span>
       		 		</Link>
       		 	</div>
       			<div className="flushright">
       				<a href="https://www.nickrobinsonstudio.com" target="_blank" rel="noreferrer">
-	      		 	<HiLink/><span className="display">View My </span>Fine Art</a>
+	      		 	<HiLink className={projectStyle.linkicon}/><span className="display">View My </span>Fine Art</a>
 	      		</div>
       		</section>
 
@@ -52,7 +52,7 @@ function Personal() {
 			</section>
 
 			<section className={projectStyle.section} id="mtn">
-	  			<h2>MOUNTAIN WAVES</h2>
+	  			<h2>Mountain Waves</h2>
   				<section className={projectStyle.branding}>
   					<p>
   				
@@ -86,7 +86,7 @@ function Personal() {
 			</section>
 
 			<section className={projectStyle.sectionbg} id="psych">
-	  			<h2>PSYCHEDELISCAPES</h2>
+	  			<h2>Psychedeliscapes</h2>
   				<section className={projectStyle.branding}>
   					<p>
   						
@@ -127,14 +127,7 @@ function Personal() {
 			</section>
 
 			<section className={projectStyle.section} id="print">
-	  			<h2>DIGITAL ART PRINTS</h2>
-  				<section className={projectStyle.branding}>
-  					<p>
-  						I rendered the robot illustration using several instances of the
-  						3D Extrude & Bevel effect in Adobe Illustrator. Each component of the
-  						Robot was designed this way, and then pieced together in Photoshop.
-  					</p>
-  				</section>
+	  			<h2>Digital Art Prints</h2>
 		  		<section className={projectStyle.sectionwrapper}>
 		  			<article className={projectStyle.left}>
 		  				<img src={eyesea}

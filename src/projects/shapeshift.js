@@ -60,13 +60,13 @@ function Shapeshift() {
 
 	      <section className={` ${projectStyle.topnav} spacing1 `}>
 	      	<div><Link className={projectStyle.a} to="/projects">
-	      		 <HiArrowNarrowLeft/> Back <span className="display">to Projects</span></Link></div>
+	      		 <HiArrowNarrowLeft className={projectStyle.linkicon}/> Back <span className="display">to Projects</span></Link></div>
 	      	<div className="flushright"><a href="http://shapeshiftbrewing.netlify.com" target="_blank" rel="noreferrer">
-	      		 <HiLink/> Launch <span className="display">Website</span></a></div>
+	      		 <HiLink className={projectStyle.linkicon}/> Launch <span className="display">Website</span></a></div>
 	      </section>
 
 	      <section className={projectStyle.header}>
-	      	<h2>Shapeshift Brewing</h2>
+	      	<h1>Shapeshift Brewing</h1>
 	      	<p><h4 className={projectStyle.projecttype}>Mockup Design Campaign</h4> (2018-2020)</p>
 	      </section>
 
@@ -105,7 +105,7 @@ function Shapeshift() {
 		  
 
 		    <section className={projectStyle.sectionbg} id="target">
-		  		<h2>TARGET AUDIENCE</h2>
+		  		<h2>Target Audience</h2>
 		  		<section className={projectStyle.sectionwrapper}>
 		  			<article className={` ${projectStyle.left} ${projectStyle.leftwidth} ${projectStyle.flexleft}`}>
 				  	 	<p>
@@ -132,7 +132,7 @@ function Shapeshift() {
 		  </section>
 
 		  <section className={projectStyle.section} id="branding">
-		  	<h2>BRANDING</h2>
+		  	<h2>Branding</h2>
 		  	<section className={projectStyle.sectionwrapper}>
 		  		<article className={projectStyle.left}>
 		  			<img src={logoblack}
@@ -292,7 +292,7 @@ function Shapeshift() {
 		  </section>
 
 		  <section className={projectStyle.sectionbg} id="packaging">
-		  	<h2>PACKAGING</h2>
+		  	<h2>Packaging</h2>
 
 		  	<section className={projectStyle.brandingshape}>
 		  		<h3>CAMPFIRE HEADPHASE IPA</h3>
@@ -481,7 +481,7 @@ function Shapeshift() {
 		  </section>	
 
 		  <section className={projectStyle.sectionbg} id="web">
-		  	<h2>WEB DESIGN</h2>
+		  	<h2>Web Design</h2>
 		  	<section className={projectStyle.sectionwrapper}>
 		  		<article className={` ${projectStyle.left} ${projectStyle.flexleft}`}>
 		  			<img

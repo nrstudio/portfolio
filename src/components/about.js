@@ -12,7 +12,7 @@ const About = () => (
   </div>
   <main className="container">
       <section className="about-container">
-        <article className="left">
+        <article className="aboutleft">
           <h2 className="herotext">I'm Nick Robinson. I'm an Artist-turned Product Designer who can code...
           But still an artist.</h2>
           <p>I live in New Haven, CT. Growing up in CT, I quickly found 
@@ -32,29 +32,30 @@ const About = () => (
           solver, figuring out the best way to make design communicate.
           </p>
         </article>
-        <article className="right">
+        
+        <article className="aboutright">
           <img
             src={aboutImage}
             alt="Nick, bewildered on the shores"
             className="hero-img"
           />
-        </article>
-    </section>
-    <section className="social-container">
-        <article className="social-item">
-          <a href="mailto:nickrobinsonart@gmail.com">
-            <HiOutlineMail className="social-size"/><span className="social-text"> nickrobinsonart@gmail.com</span>
-          </a>
-        </article>
-        <article className="social-item">
-          <a href="http://www.instagram.com/imaged_curses">
-            <RiInstagramLine className="social-size"/><span className="social-text"> Instagram</span>
-          </a>
-        </article>
-        <article className="social-item">
-          <a href="http://www.behance.net/nickrobinson">
-            <FaBehance className="social-size"/> <span className="social-text">Behance</span>
-          </a>
+          <section className="social-container">
+            <article className="social-item">
+              <a href="mailto:nickrobinsonart@gmail.com">
+                <HiOutlineMail className="social-size"/><span className="social-text"> nickrobinsonart@gmail.com</span>
+              </a>
+            </article>
+            <article className="social-item">
+              <a href="http://www.instagram.com/imaged_curses">
+                <RiInstagramLine className="social-size"/><span className="social-text"> Instagram</span>
+              </a>
+            </article>
+            <article className="social-item">
+              <a href="http://www.behance.net/nickrobinson">
+                <FaBehance className="social-size"/> <span className="social-text">Behance</span>
+              </a>
+            </article>
+          </section>
         </article>
     </section>
   </main>

@@ -7,6 +7,8 @@ import '../styles/index.css';
 import logomark from "../img/logomark.png"
 import logomarkWhite from "../img/logomark-white.png"
 
+import lefthalf from "../img/left-half.png"
+import righthalf from '../img/right-half.png'
 
 const MobileNav = () => {
 	const [openMenu, setOpenMenu] = useState(false);
@@ -113,9 +115,9 @@ const MenuLinks = styled.nav`
 	height: 100vh;
 	width: 100%;
 
-	transition: opacity 200ms, transform 200ms ease-out;
-	transform: ${ ({ openMenu }) => openMenu ? "translateY(0%)" : "translateY(-100%)" };
+	transition: opacity 200ms ease-out, visibility 0s ease-in;
 	opacity: ${ ({ openMenu }) => openMenu ? "1" : "0" };
+	visibility: ${ ({ openMenu }) => openMenu ? "visible" : "hidden" };
 
 	.logomark-white {
 		width: 112px;

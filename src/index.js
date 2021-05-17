@@ -5,7 +5,11 @@ import {
   		BrowserRouter as Router,
   		Switch
   		} from "react-router-dom";
+
 import './styles/index.css';
+import 'react-image-lightbox/style.css';
+
+import Scroll from './components/scroll';
 import RouteWithSubRoutes from './components/subroutes'
 
 import Layout from './components/layout'
@@ -31,7 +35,45 @@ const routes = [
 	{
 		path: "/",
 		component: Home,
-		exact: true
+		exact: true,
+		routes: [
+			{
+				path: "/projects/dreamtracer",
+				component: DreamTracer
+			},
+			{
+				path: "/projects/shapeshift",
+				component: Shapeshift
+			},
+			{
+				path: "/projects/wmw",
+				component: WessMeetsWest
+			},
+			{
+				path: "/projects/frontporch",
+				component: FrontPorch
+			},
+			{
+				path: "/projects/brooks",
+				component: BrooksOfYork
+			},
+			{
+				path: "/projects/songhive",
+				component: Songhive
+			},
+			{
+				path: "/projects/newmachines",
+				component: NewMachines
+			},
+			{
+				path: "/projects/misc",
+				component: Misc
+			},
+			{
+				path: "/projects/personal",
+				component: Personal
+			}
+		]
 	},
 	{
 		path: "/about",
@@ -86,7 +128,7 @@ function App() {
 		<>
 
 		<Router>
-			
+			<Scroll />
 			<Layout />
 			<Switch>
 				{routes.map((route, i) => (

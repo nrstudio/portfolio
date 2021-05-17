@@ -22,7 +22,7 @@ function FrontPorch() {
 	        <section className={` ${projectStyle.topnav} spacing1 `}>
       			<div>
       				<Link className={projectStyle.a} to="/projects">
-      		 			<HiArrowNarrowLeft/> Back <span className="display">to Projects</span>
+      		 			<HiArrowNarrowLeft className={projectStyle.linkicon}/> Back <span className="display">to Projects</span>
       		 		</Link>
       		 	</div>
       			<div className="flushright">
@@ -66,7 +66,7 @@ function FrontPorch() {
 			</section>
 
 			<section className={projectStyle.sectionbg} id="branding">
-	  			<h2>BRANDING</h2>
+	  			<h2>Branding</h2>
 			  		<section className={projectStyle.sectionwrapper}>
 			  			<article className={projectStyle.left}>
 			  				<p>
@@ -120,7 +120,7 @@ function FrontPorch() {
 			    </section>
 
 			    <section className={projectStyle.section} id="beer">
-			    	<h2>BEER LABEL</h2>
+			    	<h2>Beer Label</h2>
 					<section className={projectStyle.sectionwrapper}>
 					  	<article className={projectStyle.left}>
 					  	 	<img
