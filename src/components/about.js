@@ -1,8 +1,7 @@
 import * as React from "react"
 
 import { FaBehance } from 'react-icons/fa'
-import { RiInstagramLine } from 'react-icons/ri'
-import { HiOutlineMail } from 'react-icons/hi';
+import { HiOutlineMail, HiOutlineClipboardList } from 'react-icons/hi';
 
 import aboutImage from "../img/about-image.png"
 
@@ -39,23 +38,23 @@ const About = () => (
             alt="Nick, bewildered on the shores"
             className="hero-img"
           />
-          <section className="social-container">
+          <article className="social-container">
             <article className="social-item">
               <a href="mailto:nickrobinsonart@gmail.com">
                 <HiOutlineMail className="social-size"/><span className="social-text"> nickrobinsonart@gmail.com</span>
               </a>
             </article>
             <article className="social-item">
-              <a href="http://www.instagram.com/imaged_curses">
-                <RiInstagramLine className="social-size"/><span className="social-text"> Instagram</span>
+              <a href="https://drive.google.com/file/d/1mJGj7zKH2M6dGjVf6fY7nIgSDp983raH/view?usp=sharing" target="_blank" rel="noreferrer">
+                <HiOutlineClipboardList className="social-size"/><span className="social-text"> Resume</span>
               </a>
             </article>
             <article className="social-item">
-              <a href="http://www.behance.net/nickrobinson">
+              <a href="http://www.behance.net/nickrobinson" target="_blank" rel="noreferrer">
                 <FaBehance className="social-size"/> <span className="social-text">Behance</span>
               </a>
             </article>
-          </section>
+          </article>
         </article>
     </section>
   </main>

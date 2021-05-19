@@ -7,8 +7,7 @@ import heroImage from '../img/hero-image.png'
 import { projectslist } from "../projects/projectlist.js"
 
 import { FaBehance } from 'react-icons/fa'
-import { RiInstagramLine } from 'react-icons/ri'
-import { HiOutlineMail } from 'react-icons/hi';
+import { HiOutlineMail, HiOutlineClipboardList } from 'react-icons/hi';
 
 import projectStyle from '../styles/project.module.scss'
 
@@ -36,17 +35,17 @@ function Home() {
   	    </section>
         <section className="social-container home-social">
           <article className="social-item">
-            <a href="mailto:nickrobinsonart@gmail.com">
+            <a href="mailto:nickrobinsonart@gmail.com" target="_blank" rel="noreferrer">
               <HiOutlineMail class="social-size"/><span className="social-text"> nickrobinsonart@gmail.com</span>
             </a>
           </article>
           <article className="social-item">
-            <a href="http://www.instagram.com/imaged_curses">
-              <RiInstagramLine class="social-size"/><span className="social-text"> Instagram</span>
+            <a href="https://drive.google.com/file/d/1mJGj7zKH2M6dGjVf6fY7nIgSDp983raH/view?usp=sharing" target="_blank" rel="noreferrer">
+              <HiOutlineClipboardList class="social-size"/><span className="social-text"> Resume</span>
             </a>
           </article>
           <article className="social-item">
-            <a href="http://www.behance.net/nickrobinson">
+            <a href="http://www.behance.net/nickrobinson" target="_blank" rel="noreferrer">
               <FaBehance class="social-size"/> <span className="social-text">Behance</span>
             </a>
           </article>
