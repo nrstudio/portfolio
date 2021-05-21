@@ -1,3 +1,8 @@
+:root {
+	--slate: #5a646d;
+	--gold: #9e8f7e;
+}
+
 @import url("https://use.typekit.net/vqp3neq.css");
 
 *	{
@@ -16,7 +21,7 @@ body {
 	font-family: proxima-nova, Helvetica, Sans-serif;
 	font-weight: 300;
 	background: white;
-	color: #000;
+	color: #222;
 	font-size: 1.2rem;
 	line-height: 2rem;
 	margin: 0 auto;
@@ -71,7 +76,7 @@ a:hover, a:active {
 	font-size: 1.2rem;
 	font-weight: 700;
 	text-decoration: none;
-	color: #6397cc;
+	color: var(--gold);
 }
 
 h1 {
@@ -84,9 +89,9 @@ h1 {
 }
 
 h2 {
-	font-family: swear-display, Helvetica, Sans-serif;
+	font-family: proxima-nova, Helvetica, Sans-serif;
 	font-weight: 700;
-	font-size: 2rem;
+	font-size: 1.8rem;
 	line-height: 2.5rem;
 	margin-bottom: 30px;
 	letter-spacing: 1px;
@@ -107,17 +112,36 @@ h4 {
 	line-height: 2rem;
 }
 
+.site-title {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+
+}
+
+.copyright {
+	text-align: center;
+	font-size: 1rem;
+}
+
 .lowercase {
 	text-transform: lowercase;
 }
 
 .blue {
-	color: #627378;
+	color: var(--slate);
+}
+
+.white {
+	color: white;
+}
+
+.gold {
+	color: var(--gold);
 }
 
 /* Header Styles */
 
-.header {
+.header, .footer {
 	max-width: 1069px;
 	margin: 0 auto;
 	background: white;
@@ -125,7 +149,7 @@ h4 {
 	padding-bottom: 30px;
 }
 
-.header a {
+.header, .footer a {
 	font-family: proxima-nova, Helvetica, Sans-serif;
 	font-weight: 700;
 	font-size: 1.2rem;
@@ -135,18 +159,26 @@ h4 {
 	transition: 250ms color;
 }
 
-.header a:hover {
-	color: #6397cc;
+.header, .footer a:hover {
+	color: var(--gold);
 }
 
-.header a:active {
-	color: #6397cc;
+.header, .footer a:active {
+	color: var(--gold);
 }
 
 .head-wrap {
 	max-width: 1069px;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
+	align-items: center;
+}
+
+.foot-wrap {
+	max-width: 1069px;
+	display: flex;
+	justify-content: space-between;
+	flex-flow: row nowrap;
 	align-items: center;
 }
 
@@ -220,10 +252,6 @@ h4 {
 
 .para {
 	margin-top: -10px;
-}
-
-.white {
-	color: white;
 }
 
 .bg-home {
@@ -380,8 +408,6 @@ h4 {
 	margin: 30px 0;
 }
 
-		
-
 .project-card-hover {
 	position: absolute;
 	top: 0;
@@ -390,7 +416,7 @@ h4 {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: rgba(255,255,255,0.75);
+	background: rgba(255,255,255,0.85);
 	text-align: center;
 	color: #222;
 	
@@ -436,7 +462,7 @@ h4 {
 
 
 @media only screen and (max-width: 1112px) {
-	.header, .content-container, .about-container {
+	.header, .footer, .content-container, .about-container {
 		padding-left: 30px;
 		padding-right: 30px;
 	}
@@ -603,6 +629,16 @@ h4 {
 
 	.right h2 {
 		font-size: 1.6rem;
+	}
+}
+
+@media only screen and (max-width: 690px) {
+	.projectcard {
+		width: 100%;
+	}
+
+	.fade-title {
+		display: none;
 	}
 }
 

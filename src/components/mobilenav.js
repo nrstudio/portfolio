@@ -117,7 +117,7 @@ const MenuLinks = styled.nav`
 	visibility: ${ ({ openMenu }) => openMenu ? "visible" : "hidden" };
 
 	.logomark-white {
-		width: 112px;
+		width: 96px;
 		height: 96px;
 		margin-top: 80px;
 		margin-bottom: 60px;
@@ -132,7 +132,8 @@ const MenuLinks = styled.nav`
 	}
 
 	a {
-		font-family: metallophile-sp8, Helvetica, sans-serif;
+		font-family: proxima-nova, Helvetica, sans-serif;
+		letter-spacing: 1px;
 		text-decoration: none;
 		color: #f2f2f2;
 		transition: color 300ms;

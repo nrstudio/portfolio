@@ -13,6 +13,7 @@ import Scroll from './components/scroll';
 import RouteWithSubRoutes from './components/subroutes'
 
 import Layout from './components/layout'
+import Footer from './components/footer'
 import Home from './components/home'
 import Projects from './components/projects'
 import About from './components/about'
@@ -135,6 +136,7 @@ function App() {
 					<RouteWithSubRoutes key={i} {...route} />
 				))}
 			</Switch>	
+			<Footer />
 		</Router>
 		
 		</>

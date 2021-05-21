@@ -34,7 +34,7 @@ function Personal() {
       		 	</div>
       			<div className="flushright">
       				<a href="https://www.nickrobinsonstudio.com" target="_blank" rel="noreferrer">
-	      		 	<HiLink className={projectStyle.linkicon}/><span className="display">View My </span>Fine Art</a>
+	      		 	<HiLink className={projectStyle.linkicon}/><span className="display"> View My </span>Fine Art</a>
 	      		</div>
       		</section>
 

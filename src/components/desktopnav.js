@@ -12,7 +12,7 @@ const DesktopNav = () => {
 		<section className="header">
 			<div className="head-wrap">
 				<div> 
-					<Link to="/"><h3>nickrobinson.io</h3></Link>
+					<Link to="/"><h4 className="site-title">nickrobinson.io</h4></Link>
 				</div>
 				<div className="logowrapper">
 					<Link to="/">

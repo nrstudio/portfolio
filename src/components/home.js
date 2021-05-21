@@ -3,7 +3,7 @@ import {
       Link
       } from "react-router-dom";
 import heroImage from '../img/hero-image.png'
-
+import Footer from './footer'
 import { projectslist } from "../projects/projectlist.js"
 
 import { FaBehance } from 'react-icons/fa'
@@ -14,8 +14,6 @@ import projectStyle from '../styles/project.module.scss'
 function Home() {
   return (
     <>
-    <div className="bg-home"></div>
-    <div className="bg-home-texture"></div>
     <main className="container">
       <div className="viewport">
         <section className="content-container">
@@ -28,7 +26,7 @@ function Home() {
           </article>
           <article className="right rightflip">
             <h1>I'm Nick Robinson</h1>
-            <h1 className="white">I'm an Artist-turned Product Designer who can code.</h1>
+            <h1 className="gold">I'm an Artist-turned Product Designer who can code.</h1>
             <h2>But still an artist.</h2>
             <h2 className="collab">Let's collaborate on something beautiful and unique.</h2>
           </article>
@@ -73,7 +71,7 @@ function Home() {
                       </div>
                     </div>
                     <div className="project-info">
-                      <h2 className="project-title">{title}</h2>
+                      <h2 className="project-title fade-title">{title}</h2>
                       <p className="project-desc">{desc}</p>
                     </div>
                   </Link>
@@ -84,6 +82,7 @@ function Home() {
 
       </section>
     </main>
+
     </>
   );
 }

@@ -18,8 +18,11 @@ const Layout = ({ children }) => {
     <React.Fragment>
       <Header />
       <div id="top">
+
         <main>{children}</main>
+
       </div>
+	
     </React.Fragment>
   )
 }
