@@ -3,7 +3,6 @@ import {
       Link
       } from "react-router-dom";
 import heroImage from '../img/hero-image.png'
-import Footer from './footer'
 import { projectslist } from "../projects/projectlist.js"
 
 import { FaBehance } from 'react-icons/fa'
