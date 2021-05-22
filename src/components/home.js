@@ -27,7 +27,8 @@ function Home() {
             <h1>I'm Nick Robinson</h1>
             <h1 className="gold">I'm an Artist-turned Product Designer who can code.</h1>
             <h2>But still an artist.</h2>
-            <h2 className="collab">Let's collaborate on something beautiful and unique.</h2>
+            <h2 className="collab"><Link to="/projects">View my work</Link> and/or <a href="mailto:nickrobinsonart@gmail.com"
+            >get in touch.</a></h2>
           </article>
   	    </section>
         <section className="social-container home-social">

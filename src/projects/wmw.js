@@ -53,7 +53,7 @@ function WessMeetsWest() {
 	      		</section>
 
 	      		<section className={projectStyle.header}>
-	      			<h2>Wess Meets West</h2>
+	      			<h1>Wess Meets West</h1>
 	      			<p><h4 className={projectStyle.projecttype}>Band Design Campaign</h4> (2015-2020)</p>
 	      		</section>
 

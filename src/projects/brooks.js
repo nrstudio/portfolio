@@ -39,7 +39,7 @@ function BrooksOfYork() {
       		</section>
 
       		<section className={projectStyle.header}>
-      			<h2>BrooksOfYork</h2>
+      			<h1>BrooksOfYork</h1>
       			<p><h4 className={projectStyle.projecttype}>Music Branding & Album Artwork</h4> (2020-Present)</p>
       		</section>
 

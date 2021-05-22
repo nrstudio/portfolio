@@ -70,6 +70,18 @@
 	grid-template-columns: 1fr 1fr;
 	align-items: center;
 
+	a {
+		padding: 5px 15px;
+		border: 1px solid #222;
+		border-radius: 20px;
+		transition: all 1s ease-out;
+
+		&:hover {
+			background-color: #222;
+			color: white;
+		}
+	}
+
 	@media only screen and (max-width: 1112px) {
 		padding: 0px 30px;
 	}
@@ -80,6 +92,13 @@
 	margin: 0 auto;
 	text-align: center;
 	letter-spacing: 1px;
+
+	@media only screen and (max-width: 400px) {
+		
+		padding-left: 10px;
+		padding-right: 10px;
+	
+	}
 }
 
 .projecttype {
@@ -106,9 +125,9 @@
 		list-style-type: none;
 
 		@media only screen and (max-width: 731px) {
-			flex-flow: column nowrap;
+			flex-flow: row wrap;
 			text-align: center;
-			width: 33%;
+			width: 50%;
 			margin: 0 auto;
 		}	
 
@@ -117,18 +136,33 @@
 		}
 
 		@media only screen and (max-width: 530px) {
-			width: 45%;
+			width: 66%;
 		}
 
 		@media only screen and (max-width: 390px) {
-			width: 50%;
+			width: 75%;
 		}
 	}
 
 	li {
 		padding: 5px 15px;
-		border: 1px solid #222;
+		background-color: #222;
+		color: white;
 		border-radius: 20px;
+		transition: all .5s ease-out;
+
+		a {
+			color: white;
+
+			&:hover {
+				color: #222;
+			}
+		}
+
+		&:hover {
+			background-color: white;
+			color: #222;
+		}
 
 		@media only screen and (max-width: 731px) {
 			margin-top: 10px;
@@ -382,6 +416,9 @@
 .sectioncenter {
 	text-align: center;
 	padding: 30px;
+	max-width: 900px;
+	margin: 0 auto;
+	margin-bottom: 90px;
 }
 
 .storypic {
@@ -417,8 +454,24 @@
 .widepic {
 	width: 100%;
 	max-width: 800px;
-	min-width: 350px;
 	margin-bottom: 30px;
+
+	@media only screen and (max-width: 700px) {
+		max-width: 600px;
+	}
+
+	@media only screen and (max-width: 600px) {
+		max-width: 500px;
+		width: 90%;
+	}
+
+	@media only screen and (max-width: 500px) {
+		max-width: 400px;
+	}
+
+	@media only screen and (max-width: 425px) {
+		max-width: 350px;
+	}
 }
 
 .xsmallpic {
@@ -486,8 +539,9 @@
 
 .btnback {
 	background: #222;
-	font-family: metallophile-sp8, Helvetica, sans-serif;
-	font-size: 1.2rem;
+	font-family: proxima-nova, Helvetica, sans-serif;
+	font-weight: 700;
+	font-size: 1rem;
 	color: white;
 	width: 143px;
 	height: 30px;

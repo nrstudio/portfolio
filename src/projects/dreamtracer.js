@@ -99,7 +99,7 @@ export default class Photos extends React.Component {
 	        </section>
 
 	        <section className={projectStyle.header}>
-	      		<h2>Dream Tracer</h2>
+	      		<h1>Dream Tracer</h1>
 	       		<p><h4 className={projectStyle.projecttype}>Mobile Dream Journal App</h4> (2018-2020)</p>
 	        </section>
 
@@ -126,7 +126,8 @@ export default class Photos extends React.Component {
 			  	 <article className={projectStyle.right}>
 			  	 	<p>
 			  	 		Dream Tracer is a creative dream journal native mobile app designed
-			  	 		for the iPhone. It allows users to post their dreams in a blog-like
+			  	 		for the iPhone that I developed as my Masters Thesis at Academy of Art University.
+			  	 			It allows users to post their dreams in a blog-like
 			  	 		format, and categorize them by dream keywords and moods. Dream
 			  	 		Tracer also has a dream dictionary for the user’s keywords.
 			  	 		Additionally, users earn an illustrative dream card for each post
@@ -152,17 +153,17 @@ export default class Photos extends React.Component {
 		  		<section className={projectStyle.sectionwrapper}>
 		  			<article className={` ${projectStyle.left} ${projectStyle.flexleft}`}>
 		  				<img src={target}
-		  					 className={projectStyle.pic}
+		  					 className={` donthover ${projectStyle.pic} `}
 		  					 alt="Target Audience logo graphic"
 		  				/>
 			  		</article>
 				  	<article className={` ${projectStyle.right} ${projectStyle.flexright}`}>
 				  	 	<ul>
-				  	 		<li>Male & Female, 16-48</li>
-				  	 		<li>People interested in their dreams</li>
-				  	 		<li>People who record their dreams, pen & paper or digitally</li>
-				  	 		<li>Creative-minded people</li>
-				  	 		<li>People who want to learn more about their subconscious
+				  	 		<li>• Male & Female, 16-48</li>
+				  	 		<li>• People interested in their dreams</li>
+				  	 		<li>• People who record their dreams, pen & paper or digitally</li>
+				  	 		<li>• Creative-minded people</li>
+				  	 		<li>• People who want to learn more about their subconscious
 				  	 			psyche, mental health, or overall well-being</li>
 				  	 	</ul>
 				  	 	<p>
@@ -175,7 +176,7 @@ export default class Photos extends React.Component {
 				  	</article>
 		  		</section>
 		  		<section className={projectStyle.backwrapper}>
-			  		<a href="#top"><button className={projectStyle.btnback}>
+			  		<a href="#top"><button className={` spacing2 ${projectStyle.btnback} `}>
 			  			<HiChevronUp/>Back To Top
 			  		</button></a>
 		  		</section>
@@ -303,21 +304,21 @@ export default class Photos extends React.Component {
 
 					<article className={projectStyle.quad}>
 						<img src={moods1}
-							 className={projectStyle.smallpic}
+							 className={` donthover ${projectStyle.smallpic} `}
 							 alt="Moods List"
 						/>
 						<img src={moods2}
-							 className={projectStyle.smallpic}
+							 className={` donthover ${projectStyle.smallpic} `}
 							 alt="Moods List"
 						/>
 					</article>
 					<article className={projectStyle.quad}>
 						<img src={moods3}
-							 className={projectStyle.smallpic}
+							 className={` donthover ${projectStyle.smallpic} `}
 							 alt="Moods List"
 						/>
 						<img src={moods4}
-							 className={projectStyle.smallpic}
+							 className={` donthover ${projectStyle.smallpic} `}
 							 alt="Moods List"
 						/>
 					</article>
@@ -329,11 +330,11 @@ export default class Photos extends React.Component {
 			  			<p className="para">Headings, Logotype</p>
 			  			<h2 id="proxima">Proxima Nova</h2>
 			  			<p className="para">Primary Body Text, Button Text</p>
-			  			<img src={char} className={projectStyle.font1} alt="Charcuterie Serif"/>
+			  			<img src={char} className={` donthover ${projectStyle.font1} `} alt="Charcuterie Serif"/>
 			  			<p className="para">Dream Card Titles</p>
 					</article>
 					<article className={projectStyle.right}>
-			  			<img src={headings} className={projectStyle.font1} alt="Headings" />
+			  			<img src={headings} className={` donthover ${projectStyle.font1} `} alt="Headings" />
 					</article>
 				</section>
 				<section className={projectStyle.backwrapper}>

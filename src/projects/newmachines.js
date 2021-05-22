@@ -55,7 +55,7 @@ function NewMachines() {
       		</section>
 
       		<section className={projectStyle.header}>
-      			<h2>New Machines</h2>
+      			<h1>New Machines</h1>
       			<p><h4 className={projectStyle.projecttype}>Motion Graphic</h4> (2018)</p>
       		</section>
 
@@ -114,11 +114,11 @@ function NewMachines() {
 		  		<section className={projectStyle.sectionwrapper}>
 		  			<article className={projectStyle.left}>
 			  			
-			  			<img src={font1} className={projectStyle.font1} alt="Kontanter"/>
+			  			<img src={font1} className={` donthover ${projectStyle.font1} `} alt="Kontanter"/>
 			  			<h4>Logotype</h4>
-			  			<img src={font2} className={projectStyle.font1} alt="Balboa Extra Condensed"/>
+			  			<img src={font2} className={` donthover ${projectStyle.font1} `} alt="Balboa Extra Condensed"/>
 			  			<h4>Cast Names</h4>
-			  			<img src={font3} className={projectStyle.font1} alt="Chainprinter Regular" />
+			  			<img src={font3} className={` donthover ${projectStyle.font1} `} alt="Chainprinter Regular" />
 			  			<h4>Complimentary type for end quote and misc.</h4>
 
 		  			</article>

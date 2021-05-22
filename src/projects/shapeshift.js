@@ -276,11 +276,11 @@ function Shapeshift() {
 		  			</div>
 		  		</article>
 		  		<article className={projectStyle.right}>
-		  			<img src={font1} className={projectStyle.font1} alt="Stenciletta Solid"/>
+		  			<img src={font1} className={` donthover ${projectStyle.font1} `} alt="Stenciletta Solid"/>
 		  			<h4>Headings, Logotype</h4>
-		  			<img src={font2} className={projectStyle.font2} alt="Tenon"/>
+		  			<img src={font2} className={` donthover ${projectStyle.font2} `} alt="Tenon"/>
 		  			<h4>Sub-headings, Body Text, Beer Labeling</h4>
-		  			<img src={font3} className={projectStyle.font3} alt="Headings" />
+		  			<img src={font3} className={` donthover ${projectStyle.font3} `} alt="Headings" />
 		  		</article>
 
 		  	</section>
@@ -407,7 +407,7 @@ function Shapeshift() {
 				  	<article className={projectStyle.right}>
 					  	<img
 					  		src={testing}
-					  		className={projectStyle.pic}
+					  		className={` donthover ${projectStyle.pic} `}
 					  		alt="Users testing the site on Mobile"
 					  	/>
 				  	</article>

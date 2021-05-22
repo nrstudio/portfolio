@@ -59,7 +59,7 @@ function Songhive() {
       		</section>
 
       		<section className={projectStyle.header}>
-      			<h2>Songhive</h2>
+      			<h1>Songhive</h1>
       			<p><h4 className={projectStyle.projecttype}>Motion Graphic</h4> (2018)</p>
       		</section>
 
@@ -173,11 +173,11 @@ function Songhive() {
 			  			</div>
 		  			</article>
 		  			<article className={projectStyle.right}>
-			  			<img src={font1} className={projectStyle.font1} alt="Museo Slab"/>
+			  			<img src={font1} className={` donthover ${projectStyle.font1} `} alt="Museo Slab"/>
 			  			<h4>Headings, Logotype</h4>
-			  			<img src={font2} className={projectStyle.font1} alt="Nunito Black"/>
+			  			<img src={font2} className={` donthover ${projectStyle.font1} `} alt="Nunito Black"/>
 			  			<h4>Navigation and Body Text</h4>
-			  			<img src={font3} className={projectStyle.font1} alt="Balboa Condensed" />
+			  			<img src={font3} className={` donthover ${projectStyle.font1} `} alt="Balboa Condensed" />
 			  			<h4>Point Counts</h4>
 		  			</article>
 		  		</section>

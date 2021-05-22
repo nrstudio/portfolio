@@ -30,12 +30,7 @@ const AboutPage = () => (
           </p>
         </article>
           
-        <article className="right">
-          <img
-            src="../img/about-image.png"
-            alt="A photo of Nick, bewildered on the shores"
-            className="hero-img"
-          />
+    
         </article>
 	  </section>
     </Layout>

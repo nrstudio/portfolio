@@ -31,7 +31,7 @@ function FrontPorch() {
       		</section>
 
       		<section className={projectStyle.header}>
-      			<h2>Front Porch Brewing</h2>
+      			<h1>Front Porch Brewing</h1>
       			<p><h4 className={projectStyle.projecttype}>Branding Identity & Packaging Art</h4> (2016-2018)</p>
       		</section>
 
