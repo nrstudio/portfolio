@@ -160,7 +160,7 @@ function FrontPorch() {
 					  	 	</p>
 					  	 </article>
 					</section>
-					<section className={projectStyle.section}>
+					<section className={projectStyle.sectionwrapper}>
 						<img
 				  	 		src={charcoal}
 				  	 		className={projectStyle.pic}

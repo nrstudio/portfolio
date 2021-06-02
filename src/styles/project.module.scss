@@ -7,6 +7,10 @@
 	margin-bottom: -2px;
 }
 
+.spacingtop {
+	margin-top: 30px;
+}
+
 .spacing2 {
 	padding-bottom: 90px;
 }
@@ -501,6 +505,13 @@
 	}
 }
 
+.moodpic {
+	@media only screen and (max-width: 431px) {
+		max-width: 165px;
+		padding: 5px;
+	}
+}
+
 .cardpic {
 	display: block;
 	margin: 15px 5px;
@@ -520,6 +531,10 @@
 .mediumpic {
 	width: 100%;
 	max-width: 300px;
+}
+
+.poc {
+	margin-bottom: 30px;
 }
 
 .shadow {

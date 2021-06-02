@@ -190,7 +190,7 @@ function BrooksOfYork() {
 				  	</article>
 			  	</section>
 			</section>
-			<section className={projectStyle.backwrapper}>
+			<section className={` ${projectStyle.backwrapper}  ${projectStyle.spacing2}  `}>
 				<a href="#top"><button className={projectStyle.btnback}>
 					<HiChevronUp/>Back To Top
 				</button></a>

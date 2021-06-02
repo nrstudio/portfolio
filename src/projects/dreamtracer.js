@@ -236,7 +236,7 @@ export default class Photos extends React.Component {
 					<h3>Colors</h3>
 					<article className={projectStyle.leftgrid}>
 
-		  			<div className="spacing1">
+		  			<div className="spacing1 center">
 		  				<img src={eee} alt="Off-White" className={projectStyle.xsmallpic}/>
 		  			</div>
 		  			<div className="spacing1">
@@ -248,7 +248,7 @@ export default class Photos extends React.Component {
 		  				<p>Body Text</p>
 		  			</div>
 
-		  			<div className="spacing1">
+		  			<div className="spacing1 center">
 		  				<img src={skyblue} alt="Sky Blue" className={projectStyle.xsmallpic}/>
 		  			</div>
 		  			<div className="spacing1">
@@ -260,7 +260,7 @@ export default class Photos extends React.Component {
 		  				<p>Active Icons, Buttons, Links, Keyword Modal Header Bg</p>
 		  			</div>
 
-		  			<div className="spacing1">
+		  			<div className="spacing1 center">
 		  				<img src={white} alt="Dark Midnight Blue" className={projectStyle.xsmallpic}/>
 		  			</div>
 		  			<div className="spacing1">
@@ -272,7 +272,7 @@ export default class Photos extends React.Component {
 		  				<p>Nav Icons, Login Buttons, Form Borders</p>	
 		  			</div>
 		  	
-		  			<div className="spacing1">
+		  			<div className="spacing1 center">
 		  				<img src={midnight} alt="Dark Midnight Blue" className={projectStyle.xsmallpic}/>
 		  			</div>
 		  			<div className="spacing1">
@@ -285,7 +285,7 @@ export default class Photos extends React.Component {
                            Form & Drop-Down, Menu Backgrounds</p>
 		  				
 		  			</div>
-		  			<div className="spacing1">
+		  			<div className="spacing1 center">
 		  				<img src={red} alt="Dark Midnight Blue" className={projectStyle.xsmallpic}/>
 		  			</div>
 		  			<div className="spacing1">
@@ -304,21 +304,21 @@ export default class Photos extends React.Component {
 
 					<article className={projectStyle.quad}>
 						<img src={moods1}
-							 className={` donthover ${projectStyle.smallpic} `}
+							 className={` donthover ${projectStyle.smallpic} ${projectStyle.moodpic} `}
 							 alt="Moods List"
 						/>
 						<img src={moods2}
-							 className={` donthover ${projectStyle.smallpic} `}
+							 className={` donthover ${projectStyle.smallpic} ${projectStyle.moodpic} `}
 							 alt="Moods List"
 						/>
 					</article>
 					<article className={projectStyle.quad}>
 						<img src={moods3}
-							 className={` donthover ${projectStyle.smallpic} `}
+							 className={` donthover ${projectStyle.smallpic} ${projectStyle.moodpic} `}
 							 alt="Moods List"
 						/>
 						<img src={moods4}
-							 className={` donthover ${projectStyle.smallpic} `}
+							 className={` donthover ${projectStyle.smallpic} ${projectStyle.moodpic} `}
 							 alt="Moods List"
 						/>
 					</article>

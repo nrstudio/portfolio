@@ -7,6 +7,9 @@ import '../styles/index.css';
 import logomark from "../img/logo.png"
 import logomarkWhite from "../img/logomark-white.png"
 
+import { FaBehance } from 'react-icons/fa'
+import { HiOutlineMail, HiOutlineClipboardList } from 'react-icons/hi';
+
 const MobileNav = () => {
 	const [openMenu, setOpenMenu] = useState(false);
 	return (
@@ -27,11 +30,13 @@ const MobileNav = () => {
 				<ul>
 					<li><Link onClick={ () => setOpenMenu(!openMenu)} to="/projects">Projects</Link></li>
 					<li><Link onClick={ () => setOpenMenu(!openMenu)} to="/about">About</Link></li>
-					<li><h2 className="spacer">You are here.</h2></li>
-					<li><a href="mailto:nickrobinsonart@gmail.com">E-Mail</a></li>
-					<li><a href="http://www.instagram.com/imaged_curses" target="_blank" rel="noreferrer">Instagram</a></li>
-					<li><a href="/">Dribbble</a></li>
+					
 				</ul>
+				<section className="menu-social">
+					<article className="social-item"><a href="mailto:nickrobinsonart@gmail.com"><HiOutlineMail class="social-size" style="color: white;"/></a></article>
+					<article className="social-item"><a href="https://drive.google.com/file/d/1mJGj7zKH2M6dGjVf6fY7nIgSDp983raH/view?usp=sharing" target="_blank" rel="noreferrer"><HiOutlineClipboardList class="social-size" style="color: white;"/></a></article>
+					<article className="social-item"><a href="http://www.behance.net/nickrobinson" target="_blank" rel="noreferrer"><FaBehance class="social-size"/></a></article>
+				</section>
 			</MenuLinks>
 
 		</MenuBar>
@@ -105,7 +110,7 @@ const MenuLinks = styled.nav`
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background: #666;
+	background: #5a646d;
 	z-index: 5;
 	top: 0;
 	right: 0;

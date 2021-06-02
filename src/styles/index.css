@@ -60,6 +60,10 @@ img:hover {
 	text-align: right;
 }
 
+.center {
+	text-align: center;
+}
+
 .viewport {
 	height: 100vh;
 }
@@ -108,6 +112,7 @@ h2 {
 }
 
 h3 {
+	color: var(--gold);
 	font-family: proxima-nova, Helvetica, Sans-serif;
 	font-weight: 700;
 	font-size: 1.5rem;
@@ -397,6 +402,14 @@ h4 {
 	padding-left: 30px;
 	padding-right: 30px;
 
+}
+
+.menu-social {
+	width: 66%;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .social-text {
@@ -838,7 +851,7 @@ h4 {
 		padding-left: 20px;
 		padding-right: 20px;
 		max-width: 350px;
-		margin-left: 80px;
+		margin-left: 70px;
 	}
 
 	.foot-wrap {
