@@ -1,7 +1,7 @@
 import * as React from "react";
 
 import '../styles/index.css';
-import logomark from '../img/logomark.png';
+import logomark from '../img/logo.png';
 
 import { Link } from 'react-router-dom';
 import { HiOutlineMail } from 'react-icons/hi';

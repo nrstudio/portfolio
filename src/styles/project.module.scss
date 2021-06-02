@@ -477,7 +477,7 @@
 .xsmallpic {
 	width: 100%;
 	max-width: 86px;
-	margin-left: 90px;
+	/* margin-left: 90px; */
 }
 
 .smallpic,
@@ -534,6 +534,10 @@
 	@media only screen and (max-width: 1112px) {
 		padding-left: 30px;
 		padding-right: 30px;
+	}
+
+	@media only screen and (max-width: 801px) {
+		text-align: center;
 	}
 }
 

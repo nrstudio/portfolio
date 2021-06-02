@@ -294,7 +294,7 @@ function WessMeetsWest() {
 		  			</section>
 			  	</section>
 
-			  	<section className={projectStyle.section}>
+			  	<section className={projectStyle.section} id="motion">
 			  		<h2>Motion Graphics</h2>
 			  		<section className={projectStyle.sectionwrapper}>
 				  		<article className={projectStyle.left}>

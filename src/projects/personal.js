@@ -126,7 +126,7 @@ function Personal() {
   				</section>
 			</section>
 
-			<section className={projectStyle.section} id="print">
+			<section className={projectStyle.section} id="prints">
 	  			<h2>Digital Art Prints</h2>
 		  		<section className={projectStyle.sectionwrapper}>
 		  			<article className={projectStyle.left}>
@@ -154,7 +154,7 @@ function Personal() {
 				  	</article>
 			  	</section>
 			</section>
-			<section className={projectStyle.backwrapper}>
+			<section className={`${projectStyle.backwrapper} ${projectStyle.spacing2}`}>
 				<a href="#top"><button className={projectStyle.btnback}>
 					<HiChevronUp/>Back To Top
 				</button></a>

@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 import '../styles/index.css';
 
-import logomark from "../img/logomark.png"
+import logomark from "../img/logo.png"
 import logomarkWhite from "../img/logomark-white.png"
 
 const MobileNav = () => {

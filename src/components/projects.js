@@ -37,6 +37,7 @@ function Projects({ routes }) {
      	  </Switch>
 	      
 	      <section className={` content-container ${projectStyle.projectanimate} `}>
+			    <h1>View Projects</h1>
 			    {projectslist.map((project) => {
 			    	const { title, thumb, desc, url } = project;
 			    	return (

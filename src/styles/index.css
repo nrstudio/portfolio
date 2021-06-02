@@ -180,9 +180,10 @@ h4 {
 
 .head-wrap {
 	max-width: 1069px;
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	display: flex;
+	flex-direction: row nowrap;
 	align-items: center;
+	justify-content: space-between;
 }
 
 .foot-wrap {
@@ -191,10 +192,12 @@ h4 {
 	justify-content: space-between;
 	flex-flow: row nowrap;
 	align-items: center;
+	margin-right: 90px;
 }
 
 .logowrapper {
 	text-align: center;
+	margin-left: 75px;
 }
 
 .logomark {
@@ -335,11 +338,14 @@ h4 {
 }
 
 .right, .aboutright {
-	margin-left: 36px;
 	flex-grow: 1;
 	width: 45%;
 	z-index: 0;
 	mix-blend-mode: multiply;
+}
+
+.aboutright {
+	mix-blend-mode: normal;
 }
 
 .aboutright {
@@ -382,11 +388,15 @@ h4 {
 }
 
 .home-social {
+	margin: 0 auto;
+	display: flex;
 	flex-direction: row;
+	justify-content: space-between;
 	align-items: center;
 	max-width: 900px;
 	padding-left: 30px;
 	padding-right: 30px;
+
 }
 
 .social-text {
@@ -572,6 +582,10 @@ h4 {
 		margin-top: 30px;
 	}
 
+	.site-title {
+		font-size: 1rem;
+	}
+
 	.hero-img {
 		max-width: 500px;
 		opacity: .3;
@@ -675,6 +689,17 @@ h4 {
 		flex-direction: row;
 		justify-content: space-around;
 	}
+
+	.home-social {
+		max-width: 550px;
+		margin-top: -30px;
+	}
+}
+
+@media only screen and (max-width: 633px) {
+	.logowrapper {
+		margin-left: 40px;
+	}
 }
 
 @media only screen and (max-width: 610px) {
@@ -683,17 +708,28 @@ h4 {
 	}
 }
 
+@media only screen and (max-width: 599px) {
+
+	.header, .display {
+	 	display: none; 
+	}
+}
+
 @media only screen and (max-width: 600px) {
 	h3 {
 		margin-top: 90px;
 	}
 
-	.header, .display {
-	 	display: none; 
-	}
-
 	.content-container {
 		flex-direction: column;
+	}
+
+	.rightflip {
+		padding-top: 20px;
+	}
+
+	.right h1 {
+		font-size: 1.8rem;
 	}
 
 	.project-card {
@@ -740,6 +776,15 @@ h4 {
 
 	.collab {
 		font-size: 1.6rem;
+		padding-top: 90px;
+	}
+
+	.home-social {
+		margin-top: 90px;
+	}
+
+	.rightflip {
+		padding-top: 90px;
 	}
 }
 
@@ -752,12 +797,33 @@ h4 {
 	.bg-about {
 		height: 1000px;
 	}
+
+	.collab {
+		padding-top: 60px;
+	}
+
+	.collab a {
+		font-size: 1.6rem;
+	}
 }
 
+@media only screen and (max-width: 435px) {
+	.collab {
+		padding-top: 30px;
+	}
+
+	.rightflip {
+		padding-top: 60px;
+	}
+}
+
+@media only screen and (max-width: 425px) {
+	.about-img {
+		margin-top: 30px;
+	}
+}
 
 @media only screen and (max-width: 420px) {
-
-
 	.social-container {
 		margin-top: 180px;
 
@@ -772,6 +838,7 @@ h4 {
 		padding-left: 20px;
 		padding-right: 20px;
 		max-width: 350px;
+		margin-left: 80px;
 	}
 
 	.foot-wrap {
@@ -788,13 +855,18 @@ h4 {
 	}
 
 	.collab {
-		margin-top: 120px;
-		
+		margin-top: 60px;
+	}
+
+	.home-social {
+		padding-top: 60px;
 	}
 }
 
 @media only screen and (max-width: 400px) {
-
+	.bg-about {
+		height: 1050px;
+	}
 }
 
 @media only screen and (max-width: 350px) {

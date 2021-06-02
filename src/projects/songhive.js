@@ -189,7 +189,7 @@ function Songhive() {
   				</section>
   			</section>
 
-  			<section className={projectStyle.section}>
+  			<section className={projectStyle.section} id="storyboard">
   				<h2>Storyboard</h2>
 				<section className={projectStyle.storywrapper}>
 					<article className={projectStyle.storyitem}>
@@ -272,7 +272,7 @@ function Songhive() {
   					</button></a>
   			</section>
 
-		  	<section className={projectStyle.sectionbg}>
+		  	<section className={projectStyle.sectionbg} id="motion">
 		  		<h2>Motion Graphic Screens</h2>
 		  		<section className={projectStyle.sectionwrapper}>
 		  			<article className={projectStyle.left}>
