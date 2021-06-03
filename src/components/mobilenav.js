@@ -33,8 +33,8 @@ const MobileNav = () => {
 					
 				</ul>
 				<section className="menu-social">
-					<article className="social-item"><a href="mailto:nickrobinsonart@gmail.com"><HiOutlineMail class="social-size" style="color: white;"/></a></article>
-					<article className="social-item"><a href="https://drive.google.com/file/d/1mJGj7zKH2M6dGjVf6fY7nIgSDp983raH/view?usp=sharing" target="_blank" rel="noreferrer"><HiOutlineClipboardList class="social-size" style="color: white;"/></a></article>
+					<article className="social-item"><a href="mailto:nickrobinsonart@gmail.com"><HiOutlineMail class="social-size"/></a></article>
+					<article className="social-item"><a href="https://drive.google.com/file/d/1mJGj7zKH2M6dGjVf6fY7nIgSDp983raH/view?usp=sharing" target="_blank" rel="noreferrer"><HiOutlineClipboardList class="social-size"/></a></article>
 					<article className="social-item"><a href="http://www.behance.net/nickrobinson" target="_blank" rel="noreferrer"><FaBehance class="social-size"/></a></article>
 				</section>
 			</MenuLinks>
@@ -128,6 +128,7 @@ const MenuLinks = styled.nav`
 		margin-bottom: 60px;
 	}
 
+	
 	.spacer {
 		color: #666;
 	}

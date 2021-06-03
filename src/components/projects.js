@@ -36,8 +36,12 @@ function Projects({ routes }) {
 	        ))}
      	  </Switch>
 	      
+	      <section className="content-container">
+	      	<h1 className={projectStyle.spacingtop}>View Projects</h1>
+	      	<p className="hovertip">Hover over project thumbnail for more info</p>
+	      </section>
 	      <section className={` content-container ${projectStyle.projectanimate} `}>
-			    <h1 className={projectStyle.spacingtop}>View Projects</h1>
+			    
 			    {projectslist.map((project) => {
 			    	const { title, thumb, desc, url } = project;
 			    	return (

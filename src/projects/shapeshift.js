@@ -568,7 +568,7 @@ function Shapeshift() {
 
 		   <section className={projectStyle.web}>
 		  	<section className={projectStyle.sectionwrapper}>
-		  		<article className={` ${projectStyle.right} ${projectStyle.flexleft}`}>
+		  		<article className={` ${projectStyle.left} ${projectStyle.flexleft}`}>
 		  			<img
 		  				src={finduspage} 
 		  				className={` ${projectStyle.pic} ${projectStyle.shadow} ${projectStyle.radius} `}

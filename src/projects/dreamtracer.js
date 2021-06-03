@@ -29,6 +29,8 @@ import moods2 from './dreamtracer/moods2.png'
 import moods3 from './dreamtracer/moods3.png'
 import moods4 from './dreamtracer/moods4.png'
 import char from './dreamtracer/char.png'
+import metal from './dreamtracer/metal.png'
+import proxima from './dreamtracer/proxima.png'
 import headings from './dreamtracer/headings.png'
 
 import cardmodal from './dreamtracer/cardmodal.png'
@@ -182,7 +184,7 @@ export default class Photos extends React.Component {
 		  		</section>
 		 	</section>
 
-		 	<section className={projectStyle.section} id="branding">
+		 	<section className={projectStyle.sectionwrapper} id="branding">
 		    	<h2>Branding</h2>
   			  	<section className={projectStyle.sectionwrapper}>
   			  		<article className={projectStyle.left}>
@@ -326,10 +328,10 @@ export default class Photos extends React.Component {
 				<section className={projectStyle.sectionwrapper}>
 					<h3>Typography</h3>
 					<article className={projectStyle.left}>
-						<h2>Metallophile Sp8 Medium</h2>
+						<img src={metal} className={` donthover ${projectStyle.font1} `} alt="Metallophile Sp-8 Medium"/>
 			  			<p className="para">Headings, Logotype</p>
-			  			<h2 id="proxima">Proxima Nova</h2>
-			  			<p className="para">Primary Body Text, Button Text</p>
+						<img src={proxima} className={` donthover ${projectStyle.font1} `} alt="Proxima Nova"/>
+						<p className="para">Primary Body Text, Button Text</p>
 			  			<img src={char} className={` donthover ${projectStyle.font1} `} alt="Charcuterie Serif"/>
 			  			<p className="para">Dream Card Titles</p>
 					</article>
@@ -337,7 +339,7 @@ export default class Photos extends React.Component {
 			  			<img src={headings} className={` donthover ${projectStyle.font1} `} alt="Headings" />
 					</article>
 				</section>
-				<section className={projectStyle.backwrapper}>
+				<section className={` ${projectStyle.backwrapper} ${projectStyle.spacing2} `}>
 			  		<a href="#top"><button className={projectStyle.btnback}>
 			  			<HiChevronUp/>Back To Top
 			  		</button></a>
