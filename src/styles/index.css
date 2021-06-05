@@ -304,27 +304,6 @@ h4 {
 
 }
 
-.bg-home-texture {
-	width: 100%;
-	mix-blend-mode: overlay;
-	top: 230px;
-	height: 200px;
-	position: absolute;
-	z-index: -1;
-	background-image: url('../img/bg-texture.jpg');
-	background-size: cover;
-}
-
-		@keyframes blackbox {
-			0% {
-				transform: translateX(0%);
-			}
-
-			100% {
-				transform: translateX(-20%);
-			}
-		}
-
 .bg-about {
 	background: #f2f2f2;
 	z-index: -4;
