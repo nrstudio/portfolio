@@ -12,7 +12,7 @@ import projectStyle from '../styles/project.module.scss'
 
 import overview from './dreamtracer/overview.jpg'
 
-import target from './dreamtracer/target.png'
+import target from './dreamtracer/target.jpg'
 
 import logoblack from './dreamtracer/logomark-black.jpg'
 import logocolor from './dreamtracer/logocolor.jpg'
@@ -33,8 +33,8 @@ import metal from './dreamtracer/metal.png'
 import proxima from './dreamtracer/proxima.png'
 import headings from './dreamtracer/headings.png'
 
-import cardmodal from './dreamtracer/cardmodal.png'
-import cardmodalflip from './dreamtracer/cardmodalflip.png'
+import cardmodal from './dreamtracer/cardmodal.jpg'
+import cardmodalflip from './dreamtracer/cardmodalflip.jpg'
 import card01 from './dreamtracer/card01.png'
 import card02 from './dreamtracer/card02.png'
 import card03 from './dreamtracer/card03.png'
@@ -63,13 +63,13 @@ import finalkeyword from './dreamtracer/finalkeyword.png'
 import oldpost from './dreamtracer/oldpost.png'
 import finalpost from './dreamtracer/finalpost.png'
 
-import home from './dreamtracer/home.png'
-import create from './dreamtracer/create.png'
-import create2 from './dreamtracer/create2.png'
-import singlepost from './dreamtracer/singlepost.png'
-import keyscreen from './dreamtracer/keyscreen.png'
-import keymodal from './dreamtracer/keymodal.png'
-import cardgrid from './dreamtracer/cardgrid.png'
+import home from './dreamtracer/home.jpg'
+import create from './dreamtracer/create.jpg'
+import create2 from './dreamtracer/create2.jpg'
+import singlepost from './dreamtracer/singlepost.jpg'
+import keyscreen from './dreamtracer/keyscreen.jpg'
+import keymodal from './dreamtracer/keymodal.jpg'
+import cardgrid from './dreamtracer/cardgrid.jpg'
 
 const images = [
 	'./dreamtracer/overview.jpg',

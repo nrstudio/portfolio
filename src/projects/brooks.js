@@ -7,14 +7,14 @@ import { HiChevronUp } from 'react-icons/hi'
 
 import projectStyle from '../styles/project.module.scss';
 
-import overview from './brooksofyork/overview.png'
+import overview from './brooksofyork/overview.jpg'
 
 import logoblack from './brooksofyork/logo-black.png'
 import logoreverse from './brooksofyork/logo-reverse.png'
 import logocircleblack from './brooksofyork/logo-circle-black.png'
 import logocirclereverse from './brooksofyork/logo-circle-reverse.png'
 
-import ohmyrobot from './brooksofyork/ohmyrobot.png'
+import ohmyrobot from './brooksofyork/ohmyrobot.jpg'
 import ohmyrobotiphone from './brooksofyork/ohmyrobot-iphone.png'
 import snowbear from './brooksofyork/snowbear.jpg'
 import snowbeariphone from './brooksofyork/snowbear-iphone.png'

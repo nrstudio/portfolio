@@ -24,8 +24,8 @@ import barricades from './wmw/barricades.jpg'
 import epfront from './wmw/ep-front.jpg'
 import epback from './wmw/ep-back.jpg'
 
-import shirt1 from './wmw/shirt1.png'
-import shirt2 from './wmw/shirt2.png'
+import shirt1 from './wmw/shirt1.jpg'
+import shirt2 from './wmw/shirt2.jpg'
 import poster1 from './wmw/poster1.jpg'
 import poster2 from './wmw/poster2.jpg'
 
