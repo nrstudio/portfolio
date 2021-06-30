@@ -159,7 +159,7 @@ const MenuLinks = styled.nav`
 	}
 
 	li {
-		margin: 10px 0
+		margin: 10px 0;
 	}
 `
 

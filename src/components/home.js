@@ -2,7 +2,7 @@ import * as React from "react"
 import {
       Link
       } from "react-router-dom";
-import heroImage from '../img/hero-image.png'
+import heroImage from '../img/hero-image.jpg'
 import { projectslist } from "../projects/projectlist.js"
 
 import { FaBehance } from 'react-icons/fa'

@@ -126,8 +126,6 @@ const routes = [
 
 function App() {
 	return (
-		<>
-
 		<Router>
 			<Scroll />
 			<Layout />
@@ -138,8 +136,6 @@ function App() {
 			</Switch>	
 			<Footer />
 		</Router>
-		
-		</>
 	);
 }
 
