@@ -12,7 +12,7 @@ import projectStyle from '../styles/project.module.scss'
 
 import overview from './dreamtracer/overview.jpg'
 
-import target from './dreamtracer/target.jpg'
+import target from './dreamtracer/target.png'
 
 import logoblack from './dreamtracer/logomark-black.jpg'
 import logocolor from './dreamtracer/logocolor.jpg'

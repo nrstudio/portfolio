@@ -11,7 +11,7 @@ const Footer = () => {
 		<React.Fragment>
 			<section className="footer">
 				<div className="foot-wrap">
-					<div className="logowrapper">
+					<div>
 						<Link to="/">
 							<img src={logomark} alt="Nick Robinson Logomark" className="logomark"/>
 						</Link>

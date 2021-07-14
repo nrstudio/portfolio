@@ -39,7 +39,7 @@ function FrontPorch() {
 				<ul>
 				 	<li><a href="#overview">Overview</a></li>
 				 	<li><a href="#branding">Branding</a></li>
-				 	<li><a href="#beer">Beer Label</a></li>
+				 	<li><a href="#devil">Devil Children</a></li>
 				</ul>
 			</section>
 	     
@@ -119,8 +119,8 @@ function FrontPorch() {
 	  				</section>
 			    </section>
 
-			    <section className={projectStyle.section} id="beer">
-			    	<h2>Beer Label</h2>
+			    <section className={projectStyle.section} id="devil">
+			    	<h2>Devil Children Pale Ale</h2>
 					<section className={projectStyle.sectionwrapper}>
 					  	<article className={projectStyle.left}>
 					  	 	<img
@@ -160,10 +160,10 @@ function FrontPorch() {
 					  	 	</p>
 					  	 </article>
 					</section>
-					<section className={projectStyle.sectionwrapper}>
+					<section className={projectStyle.section}>
 						<img
 				  	 		src={charcoal}
-				  	 		className={projectStyle.pic}
+				  	 		className={projectStyle.paddingpic}
 				  	 		alt="Devil Children Charcoal Drawing"
 				  	 	/>
 					</section>

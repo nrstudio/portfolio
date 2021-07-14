@@ -3,6 +3,17 @@
 	--gold: #9e8f7e;
 }
 
+@font-face {
+  font-family: 'KingsValley-Regular';
+  src: url('../fonts/kings-valley-regular.eot'); /* IE9 Compat Modes */
+  src: local('KingsValley-Regular'), local('KingsValley-Regular'),
+       url('../fonts/kings-valley-regular.eot') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/kings-valley-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/kings-valley-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/kings-valley-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/kings-valley-regular.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
+
 @import url("https://use.typekit.net/vqp3neq.css");
 
 *	{
@@ -98,17 +109,17 @@ a:hover, a:active {
 }
 
 h1 {
-	font-family: 'alegreya', Helvetica, Sans-serif;
+	font-family: 'KingsValley-Regular', proxima-nova, Sans-serif;
 	font-weight: 400;
-	font-size: 2.8rem;
-	line-height: 3.6rem;
+	font-size: 3.2rem;
+	line-height: 2.8rem;
 	margin-bottom: 30px;
 }
 
 h2 {
-	font-family: 'alegreya', Helvetica, Sans-serif;
+	font-family: 'KingsValley-Regular', proxima-nova, Sans-serif;
 	font-weight: 400;
-	font-size: 1.8rem;
+	font-size: 2.4rem;
 	line-height: 2.5rem;
 	margin-bottom: 30px;
 }
@@ -133,7 +144,8 @@ h4 {
 .site-title {
 	text-transform: uppercase;
 	letter-spacing: 2px;
-
+	margin-left: 20px;
+	margin-bottom: 9px;
 }
 
 .hovertip {
@@ -207,7 +219,7 @@ h4 {
 .head-wrap {
 	max-width: 1069px;
 	display: flex;
-	flex-direction: row nowrap;
+	flex-flow: row nowrap;
 	align-items: center;
 	justify-content: space-between;
 }
@@ -218,12 +230,13 @@ h4 {
 	justify-content: space-between;
 	flex-flow: row nowrap;
 	align-items: center;
-	margin-right: 90px;
 }
 
 .logowrapper {
-	text-align: center;
-	margin-left: 75px;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: left;
+	align-items: center;
 }
 
 .logomark {
@@ -441,8 +454,10 @@ h4 {
 }
 
 .collab a {
-	font-family: alegreya, proxima-nova, Helvetica, sans-serif;
-	font-size: 1.8rem;
+	font-family: 'KingsValley-Regular', proxima-nova, Helvetica, sans-serif;
+	font-weight: 500;
+	font-size: 2.4rem;
+	color: var(--gold);
 }
 
 .project-thumb {
@@ -502,6 +517,7 @@ h4 {
 }
 
 .project-title {
+
 	margin: 10px 0px;
 	font-weight: 500;
 }
@@ -823,6 +839,10 @@ h4 {
 }
 
 @media only screen and (max-width: 435px) {
+	h2 {
+		font-size: 2.8rem;
+	}
+
 	.collab {
 		padding-top: 30px;
 	}
@@ -850,10 +870,10 @@ h4 {
 	}
 	
 	.footer {
-		padding-left: 20px;
+		padding-left: 10px;
 		padding-right: 20px;
 		max-width: 350px;
-		margin-left: 70px;
+		margin-left: 30px;
 	}
 
 	.foot-wrap {

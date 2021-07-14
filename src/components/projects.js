@@ -13,19 +13,6 @@ import { projectslist } from "../projects/projectlist.js"
 
 import { HiOutlineEye } from "react-icons/hi"
 
-// import Home from "./home"
-// import About from "./about"
-// import Shapeshift from "../projects/shapeshift" 
-// import DreamTracer from "../projects/dreamtracer"
-// import WessMeetsWest from "../projects/wmw"
-// import FrontPorch from "../projects/frontporch"
-// import BrooksOfYork from "../projects/brooks"
-// import Songhive from "../projects/songhive"
-// import NewMachines from "../projects/newmachines"
-// import Misc from "../projects/misc"
-// import Personal from "../projects/personal"
-
-
 function Projects({ routes }) {
 	  
 	  return (
@@ -57,7 +44,7 @@ function Projects({ routes }) {
 					    			/>
 					    			<div className="project-card-hover">
 					    				<div className="project-card-info">
-							    			<h2>{title}</h2>
+							    			<h1>{title}</h1>
 							    			<small>{desc}</small>
 							    		</div>
 					    			</div>

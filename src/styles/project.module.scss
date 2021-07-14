@@ -97,6 +97,10 @@
 	text-align: center;
 	letter-spacing: 1px;
 
+	h1 {
+		text-transform: uppercase;
+	}
+
 	@media only screen and (max-width: 400px) {
 		
 		padding-left: 10px;
@@ -442,6 +446,12 @@
 
 	@media only screen and (max-width: 600px) {
 		max-width: none;
+	}
+}
+
+.paddingpic {
+	@media only screen and (max-width: 600px) {
+		max-width: 90%;
 	}
 }
 

@@ -24,8 +24,8 @@ function Home() {
             />
           </article>
           <article className="right rightflip">
-            <h1>I'm Nick Robinson</h1>
-            <h1 className="gold">I'm an Artist-turned Product Designer.</h1>
+            <h3 className="spacing1">I'm Nick Robinson</h3>
+            <h1>I'm an Artist-turned Product Designer.</h1>
             <h2>But still an artist.</h2>
             <h2 className="collab"><Link to="/projects">View my work</Link> and/or <a href="mailto:nickrobinsonart@gmail.com"
             >get in touch.</a></h2>

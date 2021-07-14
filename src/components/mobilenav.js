@@ -25,7 +25,7 @@ const MobileNav = () => {
 			</MenuIconContainer>
 
 			<MenuLinks openMenu={openMenu}>
-				<Link to="/">nickrobinson.io</Link>
+				<Link onClick={ () => setOpenMenu(!openMenu)} to="/">nickrobinson.io</Link>
 				<img src={logomarkWhite} className="logomark-white" alt="Logomark"/>
 				<ul>
 					<li><Link onClick={ () => setOpenMenu(!openMenu)} to="/projects">Projects</Link></li>

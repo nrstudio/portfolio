@@ -2,8 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import { HiOutlineMail } from 'react-icons/hi';
-import lefthalf from "../img/left-half.png"
-import righthalf from '../img/right-half.png'
+import logomark from '../img/logo.png';
 
 import '../styles/index.css';
 
@@ -11,17 +10,18 @@ const DesktopNav = () => {
 	return (
 		<section className="header">
 			<div className="head-wrap">
-				<div> 
-					<Link to="/"><h4 className="site-title">nickrobinson.io</h4></Link>
-				</div>
+
 				<div className="logowrapper">
-					<Link to="/">
-						<img src={lefthalf} alt="Logomark" className="lefthalf"
-						/>
-						<img src={righthalf} alt="Nick Robinson" className="righthalf"
-						/>
-					</Link>
+					<div>
+						<Link to="/">
+							<img src={logomark} alt="Nick Robinson Logomark" className="logomark"/>
+						</Link>
+					</div>
+					<div className="site-title">
+						<Link to="/"><h4>nickrobinson.io</h4></Link>	
+					</div>
 				</div>
+
 				<div>
 					<ul className="topnav">
 						<Link to="/projects">
