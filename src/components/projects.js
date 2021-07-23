@@ -11,10 +11,7 @@ import RouteWithSubRoutes from './subroutes'
 import projectStyle from '../styles/project.module.scss'
 import { projectslist } from "../projects/projectlist.js"
 
-import { HiOutlineEye } from "react-icons/hi"
-
 function Projects({ routes }) {
-	  
 	  return (
   		<div>
   		  <Switch>
@@ -24,8 +21,7 @@ function Projects({ routes }) {
      	  </Switch>
 	      
 	      <section className="content-container">
-	      	<h1 className={projectStyle.spacingtop}>View Projects</h1>
-	      	<p className="hovertip">Hover over project thumbnail for more info</p>
+	      	<h1 className={projectStyle.spacingtop}>Projects</h1>
 	      </section>
 	      <section className={` content-container ${projectStyle.projectanimate} `}>
 			    
@@ -34,7 +30,6 @@ function Projects({ routes }) {
 			    	return (
 			    			
 				    		<article className="projectcard">
-				    			<HiOutlineEye className="eyecon"/>
 				    			<Link to={url}>
 					    			<img
 					    				key={project}
@@ -54,7 +49,6 @@ function Projects({ routes }) {
 					    			</div>
 				    			</Link>
 				    		</article>
-			    		
 			    	);
 			    })}
 

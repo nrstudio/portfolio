@@ -112,7 +112,7 @@ function NewMachines() {
 		  		</section>
 		  		
 		  		<section className={projectStyle.sectionwrapper}>
-		  			<article className={projectStyle.left}>
+		  			<article style={{textAlign: "center"}} className={projectStyle.left}>
 			  			
 			  			<img src={font1} className={` donthover ${projectStyle.font1} `} alt="Kontanter"/>
 			  			<h4>Logotype</h4>

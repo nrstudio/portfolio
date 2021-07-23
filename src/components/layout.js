@@ -17,7 +17,7 @@ const Layout = ({ children }) => {
   return (
     <React.Fragment>
       <Header />
-      <div id="top">
+      <div>
 
         <main>{children}</main>
 

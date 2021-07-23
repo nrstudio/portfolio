@@ -5,10 +5,10 @@ import MobileNav from './mobilenav.js';
 
 const Header = () => {
 	return (
-		<React.Fragment>
+		<div id="top">
 			<DesktopNav />
 			<MobileNav />
-		</React.Fragment>
+		</div>
 	)
 }
 

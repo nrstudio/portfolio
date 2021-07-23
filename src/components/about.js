@@ -3,7 +3,7 @@ import * as React from "react"
 import { FaBehance } from 'react-icons/fa'
 import { HiOutlineMail, HiOutlineClipboardList } from 'react-icons/hi';
 
-import aboutImage from "../img/about-image.png"
+import aboutImage from "../img/hero-image.jpg"
 
 const About = () => (
   <>

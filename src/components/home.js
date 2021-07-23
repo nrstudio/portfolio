@@ -2,7 +2,7 @@ import * as React from "react"
 import {
       Link
       } from "react-router-dom";
-import heroImage from '../img/hero-image.jpg'
+
 import { projectslist } from "../projects/projectlist.js"
 
 import { FaBehance } from 'react-icons/fa'
@@ -10,52 +10,44 @@ import { HiOutlineMail, HiOutlineClipboardList } from 'react-icons/hi';
 
 import projectStyle from '../styles/project.module.scss'
 
+import heroImage from '../img/hero-image-2.jpg'
+
 function Home() {
   return (
     <>
     <main className="container">
-      <div className="viewport">
-        <section className="content-container">
-          <article className="left leftflip">
-            <img
+      <section className="viewport">
+        <article className="hero">
+          <h1 className="hero-quote">Branding is everything.</h1>
+          <img
               src={heroImage}
               alt="Nick Robinson"
-              className="hero-img"
+              className="hero-img donthover"
             />
-          </article>
-          <article className="right rightflip">
-            <h3 className="spacing1">I'm Nick Robinson</h3>
-            <h1>I'm an Artist-turned Product Designer.</h1>
-            <h2>But still an artist.</h2>
-            <h2 className="collab"><Link to="/projects">View my work</Link> and/or <a href="mailto:nickrobinsonart@gmail.com"
-            >get in touch.</a></h2>
-          </article>
-  	    </section>
-        <section className="home-social">
-          <article className="social-item">
-            <a href="mailto:nickrobinsonart@gmail.com" target="_blank" rel="noreferrer">
-              <HiOutlineMail class="social-size"/><span className="social-text"> nickrobinsonart@gmail.com</span>
-            </a>
-          </article>
-          <article className="social-item">
-            <a href="https://drive.google.com/file/d/1mJGj7zKH2M6dGjVf6fY7nIgSDp983raH/view?usp=sharing" target="_blank" rel="noreferrer">
-              <HiOutlineClipboardList class="social-size"/><span className="social-text"> Resume</span>
-            </a>
-          </article>
-          <article className="social-item">
-            <a href="http://www.behance.net/nickrobinson" target="_blank" rel="noreferrer">
-              <FaBehance class="social-size"/> <span className="social-text">Behance</span>
-            </a>
-          </article>
-        </section>
-      </div>
-
-      <section className="content-container">
-        
-          <h1 className={projectStyle.spacingtop}>View Projects</h1>
-          <p className="hovertip">Hover over project thumbnail for more info</p>
+          <h1 className="hero-quote-r">Branding is everything.</h1>
+          <h3>I'm not saying <i>looks</i> are everything. But how else can we tell everything apart? I'm here to make a visual difference to everything I put my imagination to.</h3>
+        </article>
+    	  <article className="home-social">
+            <div className="social-item">
+              <a href="mailto:nickrobinsonart@gmail.com" target="_blank" rel="noreferrer">
+                <HiOutlineMail class="social-size"/><span className="social-text"> nickrobinsonart@gmail.com</span>
+              </a>
+            </div>
+            <div className="social-item">
+              <a href="https://drive.google.com/file/d/1mJGj7zKH2M6dGjVf6fY7nIgSDp983raH/view?usp=sharing" target="_blank" rel="noreferrer">
+                <HiOutlineClipboardList class="social-size"/><span className="social-text"> Resume</span>
+              </a>
+            </div>
+            <div className="social-item">
+              <a href="http://www.behance.net/nickrobinson" target="_blank" rel="noreferrer">
+                <FaBehance class="social-size"/> <span className="social-text">Behance</span>
+              </a>
+            </div>
+        </article>
       </section>
-      <section className={` content-container ${projectStyle.projectanimate} `}>
+
+
+      <section className={` home-projects ${projectStyle.projectanimate} `}>
           
           {projectslist.map((project) => {
             const { title, desc, url, logo } = project;

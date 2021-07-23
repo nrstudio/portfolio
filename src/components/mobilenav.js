@@ -30,7 +30,7 @@ const MobileNav = () => {
 				<ul>
 					<li><Link onClick={ () => setOpenMenu(!openMenu)} to="/projects">Projects</Link></li>
 					<li><Link onClick={ () => setOpenMenu(!openMenu)} to="/about">About</Link></li>
-					
+					<li><a onClick={ () => setOpenMenu(!openMenu)} href="http://www.nickrobinsonstudio.com" target="_blank" rel="noreferrer">Fine Art</a></li>
 				</ul>
 				<section className="menu-social">
 					<article className="social-item"><a href="mailto:nickrobinsonart@gmail.com"><HiOutlineMail class="social-size"/></a></article>
@@ -46,7 +46,7 @@ const MobileNav = () => {
 export default MobileNav
 
 const MenuBar = styled.header `
-	@media only screen and (min-width: 600px) {
+	@media only screen and (min-width: 671px) {
 		display: none;
 	}
 	padding: 1.5rem;
@@ -110,7 +110,7 @@ const MenuLinks = styled.nav`
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background: #5a646d;
+	background: #9e8f7e;
 	z-index: 5;
 	top: 0;
 	right: 0;

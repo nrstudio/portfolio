@@ -432,7 +432,7 @@ function Shapeshift() {
 					</article>
 				</section>
 
-				<section className={projectStyle.ux}>
+				<section className={projectStyle.uxshapeshift}>
 					<article>
 						<img src={oldbeersmobile}
 							 className={` ${projectStyle.mobilepic} ${projectStyle.shadow} `}
@@ -445,11 +445,11 @@ function Shapeshift() {
 					</article>
 					<article>
 						<img src={newbeersmobile}
-							 className={` ${projectStyle.mobilepic} ${projectStyle.shadow} `}
+							 className={` ${projectStyle.mobilepicdouble} ${projectStyle.shadow} `}
 							 alt="New Beer List Page with Card Flip"
 						/>
 						<img src={newbeersmobile2}
-							 className={` ${projectStyle.mobilepic} ${projectStyle.shadow} `}
+							 className={` ${projectStyle.mobilepicdouble} ${projectStyle.shadow} `}
 							 alt="New Beer List Page with Card Flipped"
 						/>
 					</article>

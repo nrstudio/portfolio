@@ -24,8 +24,8 @@ import barricades from './wmw/barricades.jpg'
 import epfront from './wmw/ep-front.jpg'
 import epback from './wmw/ep-back.jpg'
 
-import shirt1 from './wmw/shirt1.jpg'
-import shirt2 from './wmw/shirt2.jpg'
+import shirt1 from './wmw/shirt1.png'
+import shirt2 from './wmw/shirt2.png'
 import poster1 from './wmw/poster1.jpg'
 import poster2 from './wmw/poster2.jpg'
 
@@ -305,7 +305,7 @@ function WessMeetsWest() {
 								symbolizing the band's sound moving through space as a few
 								testimonials slide in and out of view.
 							</p>
-							<a href="https://youtu.be/snP3p2ObwdM" target="_blank" rel="noreferrer"><HiLink/> Link to Video</a>
+							<a href="https://youtu.be/snP3p2ObwdM" className={projectStyle.extlink} target="_blank" rel="noreferrer"><HiLink/> Link to Video</a>
 				  		</article>
 				  		<article className={projectStyle.right}>
 				  			<img
@@ -338,7 +338,7 @@ function WessMeetsWest() {
 					  			onto the band and the wall behind it, during the song, adding to
 					  			the live experience.
 				  			</p>
-				  			<a href="https://youtu.be/imjp2qVJ8mU" target="_blank" rel="noreferrer"><HiLink/> Link to Video</a>
+				  			<a href="https://youtu.be/imjp2qVJ8mU" className={projectStyle.extlink} target="_blank" rel="noreferrer"><HiLink/> Link to Video</a>
 				  		</article>
 				  		<article className={projectStyle.right}>
 				  			<img

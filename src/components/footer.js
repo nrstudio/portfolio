@@ -24,6 +24,9 @@ const Footer = () => {
 							<Link to="/about">
 								<li className="nav-item">About</li>
 							</Link>
+							<a href="http://www.nickrobinsonstudio.com" target="_blank" rel="noreferrer">
+								<li className="nav-item">Fine Art</li>
+							</a>
 							<a href="mailto:nickrobinsonart@gmail.com">
 								<li className="nav-item"><HiOutlineMail className="icon" /></li>
 							</a>
