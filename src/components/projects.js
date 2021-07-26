@@ -21,7 +21,7 @@ function Projects({ routes }) {
      	  </Switch>
 	      
 	      <section className="content-container">
-	      	<h1 className={projectStyle.spacingtop}>Projects</h1>
+	      	<h1>Projects</h1>
 	      </section>
 	      <section className={` content-container ${projectStyle.projectanimate} `}>
 			    

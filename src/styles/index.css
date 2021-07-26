@@ -86,7 +86,7 @@ img:hover {
 }
 
 .viewport {
-	height: 100vh;
+
 }
 
 p {
@@ -289,15 +289,6 @@ h4 {
 
 }
 
-.bg-about {
-	background: #f2f2f2;
-	z-index: -4;
-	width: 100%;
-	position: absolute;
-	top: 275px;
-	height: 620px;
-}
-
 .content-container {
 	max-width: 1069px;
 	display: flex;
@@ -323,6 +314,7 @@ h4 {
 }
 
 .about-container {
+
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-between;
@@ -550,18 +542,9 @@ h4 {
 		padding-left: 30px;
 		padding-right: 30px;
 	}
-
-	.bg-about {
-		top: 280px;
-		height: 650px;
-	}
 }
 
 @media only screen and (max-width: 1010px) {
-	.bg-about {
-		height: 710px;
-	}
-
 	.social-container {
 		max-width: 900px;
 	}
@@ -571,33 +554,15 @@ h4 {
 
 }
 
-@media only screen and (max-width: 944px) {
-	.bg-about {
-		height: 740px;
-	}
-}
-
 @media only screen and (max-width: 924px) {
-	.bg-about {
-		height: 780px;
-	}
 
 	.home-social {
 		max-width: 800px;
 	}
 }
 
-@media only screen and (max-width: 914px) {
-	.bg-about {
-		top: 320px;
-		height: 780px;
-	}
-}
 
 @media only screen and (max-width: 850px) {
-	.bg-about {
-		height: 810px;
-	}
 
 	.hero-img {
 		min-width: 325px;
@@ -620,9 +585,6 @@ h4 {
 }
 
 @media only screen and (max-width: 830px) {
-	.bg-about {
-		height: 850px;
-	}
 
 	.project-card-info h1 {
 		font-size: 2.5rem;
@@ -630,12 +592,6 @@ h4 {
 
 	.project-card-info small {
 		line-height: 1.2rem;
-	}
-}
-
-@media only screen and (max-width: 770px) {
-	.bg-about {
-		height: 900px;
 	}
 }
 
@@ -680,10 +636,6 @@ h4 {
 	.blue {
 		color: #fff;
 	}
-
-	.bg-about {
-		top: 100px;
-	}
 }
 
 @media only screen and (max-width: 723px) {
@@ -697,10 +649,6 @@ h4 {
 }
 
 @media only screen and (max-width: 700px) {
-	.bg-about {
-		height: 750px;
-	}
-
 	.project-card-info {
 		width: 90%;
 	}
@@ -760,13 +708,6 @@ h4 {
 		margin-left: 40px;
 	}
 }
-
-@media only screen and (max-width: 610px) {
-	.bg-about {
-		height: 800px;
-	}
-}
-
 
 @media only screen and (max-width: 600px) {
 	h3 {
@@ -831,7 +772,7 @@ h4 {
 }
 
 @media only screen and (max-width: 599px) {
-	.display, {
+	.display {
 	 	display: none; 
 	}
 }
@@ -839,12 +780,6 @@ h4 {
 @media only screen and (max-width: 566px) {
 	.hero h1 {
 		font-size: 3.5rem;
-	}
-}
-
-@media only screen and (max-width: 529px) {
-	.bg-about {
-		height: 850px;
 	}
 }
 
@@ -869,12 +804,8 @@ h4 {
 
 @media only screen and (max-width: 470px) {
 	.about-container {
-		padding-left: 20px;
-		padding-right: 20px;
-	}
-
-	.bg-about {
-		height: 1000px;
+		padding-left: 0px;
+		padding-right: 0px;
 	}
 
 	.collab {
@@ -939,9 +870,6 @@ h4 {
 }
 
 @media only screen and (max-width: 400px) {
-	.bg-about {
-		height: 1050px;
-	}
 
 	.footer .topnav {
 		flex-direction: column;
@@ -951,8 +879,8 @@ h4 {
 	.footer .nav-item {
 		margin-bottom: 15px;
 	}
-}
 
-@media only screen and (max-width: 350px) {
-
+	.footer {
+		margin-left: 15px;
+	}
 }

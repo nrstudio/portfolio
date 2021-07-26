@@ -25,7 +25,8 @@ function Home() {
               className="hero-img donthover"
             />
           <h1 className="hero-quote-r">Branding is everything.</h1>
-          <h3>I'm not saying <i>looks</i> are everything. But how else can we tell everything apart? I'm here to make a visual difference to everything I put my imagination to.</h3>
+          <h3>How else can we tell everything apart?</h3>
+          <h3>I'm a product/brand designer looking to make a difference.</h3>
         </article>
     	  <article className="home-social">
             <div className="social-item">

@@ -1,4 +1,5 @@
 import * as React from "react"
+import { Link } from "react-router-dom";
 
 import { FaBehance } from 'react-icons/fa'
 import { HiOutlineMail, HiOutlineClipboardList } from 'react-icons/hi';
@@ -7,28 +8,27 @@ import aboutImage from "../img/hero-image.jpg"
 
 const About = () => (
   <>
-  <div className="bg-about">
-  </div>
   <main className="container">
       <section className="about-container">
         <article className="aboutleft">
-          <h2 className="herotext">I'm Nick Robinson. I'm an Artist-turned Product Designer who can code...
+          <h2 className="herotext">I'm Nick Robinson. I'm an Artist-turned Product/Brand Designer who can code...
           But still an artist.</h2>
-          <p>I live in New Haven, CT. Growing up in CT, I quickly found 
-          inspiration in my own imagination, contributed by video games, 
-          music, and sci-fi/horror movies. 
+          <p>I'm from New Haven, CT. I'm a visual problem-solver, constantly figuring out
+          the best way to execute ideas that travel through the gauntlet of my mind, to my hands.
           </p>
-          <p>It wasn’t until late-undergrad college that I decided to take 
-          art a little more seriously, particularly in painting and drawing. 
-          And I always loved creating experimental digital art using stock 
-          imagery, falling in love with Photoshop in my teens. Today, I 
-          take my camera around with me to source my own imagery. 
+          <p>
+          I have a background in working as a team asset, as well as a freelancer. I've worked in a sign shop, and
+          a direct mail advertising company. I've designed branding and labeling for a local microbrewery, and
+          vinyl packaging for bands. My biggest accomplishment yet is obtaining my Masters of Fine Arts in Web
+          Design & New Media from Academy of Art University. My thesis project was a creative dream journal
+          web app called Dream Tracer, which you can see in my <Link to href="/projects">Projects</Link> section.
           </p>
-          <p>The hunger to create and to get ideas out of my head onto some 
-          sort of canvas hasn’t left me. Along with packaging art and branding 
-          identity, web design is my latest calling, fusing “form” and “function” 
-          together in multiple ways. At the end of the day, I’m a visual problem 
-          solver, figuring out the best way to make design communicate.
+          <p>I also have a background in fine art and digital art. In recent years I've gone from
+          oil and acrylic painting, to pen and ink. I also experiment with digital photography,
+          and I source those results for my digital artwork. But that's not all. I also play guitar
+          and write music in what free time I have left. 
+          </p>
+          <p>To live is to create, and communicate. 
           </p>
         </article>
         
